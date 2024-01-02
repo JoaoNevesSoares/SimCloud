@@ -1,0 +1,238 @@
+{
+  "name": "simple_json",
+  "schemaVersion": "1.0",
+  "workflow": {
+    "makespanInSeconds": 0,
+    "executedAt": "2023-03-09T00:00:00-00:00",
+    "tasks": [
+      {
+        "name": "Patser_id_000",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_001",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_002",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_003",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_004",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_005",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_006",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_007",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_008",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_009",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_010",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_011",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_012",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_013",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_014",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_015",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_016",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_017",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Patser_id_018",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Transterm_id_000",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "FindTerm_id_000",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "RNAMotif_id_000",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "Blast_id_000",
+        "type": "compute",
+        "parents": [],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "PatserConcate_id_000",
+        "type": "compute",
+        "parents": [
+          "Patser_id_000",
+          "Patser_id_001",
+          "Patser_id_002",
+          "Patser_id_003",
+          "Patser_id_004",
+          "Patser_id_005",
+          "Patser_id_006",
+          "Patser_id_007",
+          "Patser_id_008",
+          "Patser_id_009",
+          "Patser_id_010",
+          "Patser_id_011",
+          "Patser_id_012",
+          "Patser_id_013",
+          "Patser_id_014",
+          "Patser_id_015",
+          "Patser_id_016",
+          "Patser_id_017",
+          "Patser_id_018"
+        ],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "SRNA_id_000",
+        "type": "compute",
+        "parents": [
+          "TransTerm_id_000",
+          "FindTerm_id_000",
+          "RNAMotif_id_000",
+          "Blast_id_000"
+        ],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "FFNParse_id_000",
+        "type": "compute",
+        "parents": [
+          "SRNA_id_000"
+        ],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "BlastCandidate_id_000",
+        "type": "compute",
+        "parents": [
+          "SRNA_id_000"
+        ],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "BlastQRNA_id_000",
+        "type": "compute",
+        "parents": [
+          "SRNA_id_000"
+        ],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "BlastParalogues_id_000",
+        "type": "compute",
+        "parents": [
+          "SRNA_id_000"
+        ],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "BlastSynteny_id_000",
+        "type": "compute",
+        "parents": [
+          "SRNA_id_000",
+          "FFNParse_id_000"
+        ],
+        "runtimeInSeconds": 1e8
+      },
+      {
+        "name": "SRNAannotate_id_000",
+        "type": "compute",
+        "parents": [
+          "BlastSynteny_id_000",
+          "BlastParalogues_id_000",
+          "BlastCandidate_id_000",
+          "BlastQRNA_id_000",
+          "PatserConcate_id_000"
+        ],
+        "runtimeInSeconds": 1e8
+      }
+    ]
+  }
+}

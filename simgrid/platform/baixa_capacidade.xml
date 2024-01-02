@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "https://simgrid.org/simgrid.dtd">
+<platform version="4.1">
+    <zone id="ufpel" routing="Full">
+        <host id="cavalheiro" speed="100Mf" core="4">
+            <disk id="sd_1" read_bw="200MBps" write_bw="100MBps"/>
+            <prop id="ram" value="1024"/>
+            <prop id="start_date" value="0"/>
+        </host>
+        <!-- Create more 3 hosts -->
+        <host id="dubois" speed="200Mf" core="4">
+            <disk id="sd_2" read_bw="200MBps" write_bw="100MBps"/>
+            <prop id="ram" value="1024"/>
+            <prop id="start_date" value="0"/>
+        </host>
+        <host id="burlamaqui" speed="100Mf" core="4">
+            <disk id="sd_3" read_bw="200MBps" write_bw="100MBps"/>
+            <prop id="ram" value="1024"/>
+            <prop id="start_date" value="0"/>
+        </host>
+        <host id="soares" speed="100Mf" core="4">
+            <disk id="sd_4" read_bw="200MBps" write_bw="100MBps"/>
+            <prop id="ram" value="1024"/>
+            <prop id="start_date" value="0"/>
+        </host>
+
+        <!-- Create link between every host -->
+        <!-- Create route for every host -->
+        <link id="loopback" bandwidth="1000GBps" latency="0" sharing_policy="FATPIPE"/>
+        <link id="1" bandwidth="1GBps" latency="100us"/>
+        <link id="2" bandwidth="1GBps" latency="100us"/>
+        <link id="3" bandwidth="1GBps" latency="100us"/>
+        <link id="4" bandwidth="1GBps" latency="100us"/>
+        <link id="5" bandwidth="1GBps" latency="100us"/>
+        <link id="6" bandwidth="1GBps" latency="100us"/>
+
+        <!-- Create route for every host -->
+        <route src="cavalheiro" dst="cavalheiro">
+            <link_ctn id="loopback"/>
+        </route>
+        <route src="dubois" dst="dubois">
+            <link_ctn id="loopback"/>
+        </route>
+        <route src="burlamaqui" dst="burlamaqui">
+            <link_ctn id="loopback"/>
+        </route>
+        <route src="soares" dst="soares">
+            <link_ctn id="loopback"/>
+        </route>
+        <route src="cavalheiro" dst="dubois">
+            <link_ctn id="1"/>
+        </route>
+        <route src="cavalheiro" dst="burlamaqui">
+            <link_ctn id="2"/>
+        </route>
+        <route src="cavalheiro" dst="soares">
+            <link_ctn id="3"/>
+        </route>
+        <route src="dubois" dst="burlamaqui">
+            <link_ctn id="4"/>
+        </route>
+        <route src="dubois" dst="soares">
+            <link_ctn id="5"/>
+        </route>
+        <route src="burlamaqui" dst="soares">
+            <link_ctn id="6"/>
+        </route>
+    </zone>
+</platform>

@@ -1,6 +1,15 @@
+# IDE - specific
+.idea
+.vscode
+
+# OS - specific
+.DS_Store
+
+# Build system
+simgrid/cmake-build-debug
+simgrid/cmake-build-release
 # Prerequisites
 *.d
-
 # Compiled Object files
 *.slo
 *.lo
