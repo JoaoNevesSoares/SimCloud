@@ -1,114 +1,68 @@
 //
-// Created by Joao Antonio Soares on 01/01/24.
+// Created by Joao Antonio Soars on 01/01/24.
 //
 #include <simgrid/s4u.hpp>
-#include "simgrid/plugins/load.h"
-
-XBT_LOG_NEW_DEFAULT_CATEGORY(log,"descrição");
-
-static void monitor(simgrid::s4u::Mailbox* mailbox) {
-
-    simgrid::s4u::Actor::self()->daemonize();
-    while(simgrid::s4u::this_actor::get_host()->is_on()){
-        auto msg = *mailbox->get<std::string>();
-        XBT_INFO("recebi %s", msg.c_str());
-    }
-}
-
-class UserPlatform {
-
-public:
-    std::vector<simgrid::s4u::Host*> hosts_list;
-    std::vector<simgrid::s4u::VirtualMachine*> vms_list;
-
-    explicit UserPlatform(const std::vector<std::string>& hosts_names){
-        for(auto& host_name : hosts_names){
-            hosts_list.push_back(simgrid::s4u::Host::by_name(host_name));
-        }
-    }
-    void createVM(simgrid::s4u::Host* pm, int num_cores, const std::string& vm_name){
-        simgrid::s4u::VirtualMachine* vm = pm->create_vm(vm_name, num_cores, 1024);
-        vms_list.push_back(vm);
-    }
-};
-
-class WMS {
-
-public:
-
-    mutable std::vector<simgrid::s4u::ActivityPtr> dag;
-    mutable UserPlatform* user_platform;
-    mutable std::string my_name;
-    explicit WMS(UserPlatform* user_platform = nullptr): user_platform(user_platform){
-        XBT_INFO("WMS created");
-    }
-    void addDag(const std::string& dag_file){
-        XBT_INFO("dag path: %s", dag_file.c_str());
-        this->dag = simgrid::s4u::create_DAG_from_json(dag_file);
-    }
-    static void schedule_task_on(simgrid::s4u::Exec* task, simgrid::s4u::VirtualMachine* vm){
-        task->set_host(vm);
-    }
-    void setName(std::string name){
-        this->my_name = name;
-    }
-    void start() {
-        std::mutex mailboxMutex;
-        // start all tasks in the same vm of the same host
-        for (const auto &task : this->dag) {
+static int contador = 0;
+XBT_LOG_NEW_DEFAULT_CATEGORY(log,"descriptor");
+static void worker() {
+    simgrid::s4u::Exec::on_completion_cb([](simgrid::s4u::Exec const& exec) {
+        XBT_INFO("Exec '%s' is complete on %s (start time: %f, finish time: %f) host clock %g",
+                 exec.get_cname(),
+                 exec.get_host()->get_cname(),
+                 exec.get_start_time(), exec.get_finish_time(),
+                 exec.get_host()->get_speed());
+    });
+    simgrid::s4u::Host* host = simgrid::s4u::Host::by_name("cavalheiro");
+    std::vector<simgrid::s4u::ActivityPtr> dag = simgrid::s4u::create_DAG_from_json("/Users/jansoares/simcloud/simgrid/deployment/epigenomics-43.json");
+    while(contador < 41){
+        for(auto& task: dag){
             auto *exec = dynamic_cast<simgrid::s4u::Exec *>(task.get());
-            if (task != nullptr) {
-                schedule_task_on(exec, user_platform->vms_list[0]);
-                std::string msg = "task_start" + this->my_name;
-                simgrid::s4u::Mailbox::by_name("cavalheiro")->put(&msg, 0);
+            XBT_INFO("task %s: solved %d ? assigned %d?",exec->get_cname(),exec->dependencies_solved(),exec->is_assigned());
+            if(exec->dependencies_solved() && (not exec->is_assigned())){
+                exec->set_host(host);
+                exec->wait();
+                contador++;
             }
         }
-        for (const auto &task : this->dag) {
-            auto* exec = dynamic_cast<simgrid::s4u::Exec*>(task.get());
-            exec->wait();
+    }
+}
+static void worker2() {
+    simgrid::s4u::Exec::on_completion_cb([](simgrid::s4u::Exec const& exec) {
+        XBT_INFO("Exec '%s' is complete on %s (start time: %f, finish time: %f) host clock %g",
+                 exec.get_cname(),
+                 exec.get_host()->get_cname(),
+                 exec.get_start_time(), exec.get_finish_time(),
+                 exec.get_host()->get_speed());
+    });
+    simgrid::s4u::Host* host = simgrid::s4u::Host::by_name("cavalheiro");
+    std::vector<simgrid::s4u::ActivityPtr> dag = simgrid::s4u::create_DAG_from_json("/Users/jansoares/simcloud/simgrid/deployment/epigenomics-43.json");
+    simgrid::s4u::ActivitySet running_waiting;
+    std::vector<simgrid::s4u::ActivityPtr> ready_tasks;
+    while(not dag.empty()) {
+        for (auto &task: dag) {
+            auto *exec = dynamic_cast<simgrid::s4u::Exec *>(task.get());
+
+            if (exec->dependencies_solved() && (not exec->is_assigned())) {
+                exec->set_host(host);
+                running_waiting.push(task);
+                ready_tasks.push_back(task);
+            }
         }
-        for (const auto& vm: user_platform->vms_list) {
-            vm->destroy();
+        running_waiting.wait_any();
+        // find the task that finished, and remove from simgrid::s4u::ActivitySet running_waiting;
+        for (auto &task: ready_tasks) {
+            auto *exec = dynamic_cast<simgrid::s4u::Exec *>(task.get());
+            if (exec->test()) {
+                dag.erase(std::remove(dag.begin(), dag.end(), task), dag.end());
+                ready_tasks.erase(std::remove(ready_tasks.begin(), ready_tasks.end(), task), ready_tasks.end());
+                break;
+            }
         }
     }
-};
-
-
-static void user(int argc, char* argv[]) {
-
-    std::string dag_file_name = argv[1];
-    int num_of_vms_available = std::stoi(argv[2]);
-    int num_of_cores = std::stoi(argv[3]);
-    std::string user_name = argv[4];
-    auto* plat = new UserPlatform({"cavalheiro"});
-    plat->createVM(simgrid::s4u::Host::by_name("cavalheiro"), num_of_cores, user_name + "_vm");
-    auto* pegasus = new WMS(plat);
-    pegasus->setName(user_name);
-    pegasus->addDag(dag_file_name);
-    pegasus->start();
-    delete plat;
-    delete pegasus;
 }
-
-static void accountExecution(simgrid::s4u::Exec const & exec){
-    XBT_INFO("Exec '%s' is complete on %s (start time: %f, finish time: %f) host clock %g",
-             exec.get_cname(),
-             exec.get_host()->get_cname(),
-             exec.get_start_time(), exec.get_finish_time(),
-             exec.get_host()->get_speed());
-}
-
 int main(int argc, char* argv[]) {
-
     simgrid::s4u::Engine e(&argc, argv);
     e.load_platform(argv[1]);
-    e.register_function("user", user);
-    e.load_deployment(argv[2]);
-    simgrid::s4u::Exec::on_completion_cb(accountExecution);
-    //create monitor actor for each host
-    for(auto& host : simgrid::s4u::Engine::get_instance()->get_all_hosts()){
-        simgrid::s4u::Actor::create(host->get_name(),host, monitor, simgrid::s4u::Mailbox::by_name(host->get_cname()));
-    }
+    simgrid::s4u::Actor::create("worker", simgrid::s4u::Host::by_name("cavalheiro"), worker2);
     e.run();
-    XBT_INFO("Simulation time %g", e.get_clock());
 }
