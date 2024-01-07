@@ -6,6 +6,17 @@
     "executedAt": "2023-03-09T00:00:00-00:00",
     "tasks": [
       {
+        "name": "SRNA_id_000",
+        "type": "compute",
+        "parents": [
+          "TransTerm_id_000",
+          "FindTerm_id_000",
+          "RNAMotif_id_000",
+          "Blast_id_000"
+        ],
+        "runtimeInSeconds": 1e8
+      },
+      {
         "name": "Patser_id_000",
         "type": "compute",
         "parents": [],
@@ -166,17 +177,6 @@
           "Patser_id_016",
           "Patser_id_017",
           "Patser_id_018"
-        ],
-        "runtimeInSeconds": 1e8
-      },
-      {
-        "name": "SRNA_id_000",
-        "type": "compute",
-        "parents": [
-          "TransTerm_id_000",
-          "FindTerm_id_000",
-          "RNAMotif_id_000",
-          "Blast_id_000"
         ],
         "runtimeInSeconds": 1e8
       },

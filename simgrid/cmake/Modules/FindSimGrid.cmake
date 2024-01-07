@@ -105,7 +105,9 @@ find_package_handle_standard_args(SimGrid
 if (SimGrid_FOUND)
   add_library(SimGrid::SimGrid SHARED IMPORTED
           ../../userLevelScheduling.cpp
-          ../../automaticScheduling.cpp)
+          ../../automaticScheduling.cpp
+          ../../eventdriven.cpp
+          ../../eventdriven.h)
   set_target_properties(SimGrid::SimGrid PROPERTIES
     INTERFACE_SYSTEM_INCLUDE_DIRECTORIES ${SimGrid_INCLUDE_DIR}
     INTERFACE_COMPILE_FEATURES cxx_alias_templates

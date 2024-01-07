@@ -1,238 +1,54 @@
 {
-  "name": "simple_json",
-  "schemaVersion": "1.0",
+  "name": "Epigenomics-synthetic-instance",
+  "description": "Instance generated with WfCommons - https://wfcommons.org",
+  "createdAt": "2024-01-03T02:06:06.679860",
+  "schemaVersion": "1.3",
+  "author": {
+    "name": "jansoares",
+    "email": "support@wfcommons.org"
+  },
+  "wms": {
+    "name": "WfCommons",
+    "version": "0.8",
+    "url": "https://docs.wfcommons.org/en/v0.8/"
+  },
   "workflow": {
-    "makespanInSeconds": 0,
-    "executedAt": "2023-03-09T00:00:00-00:00",
+    "executedAt": "20240102T230606-0300",
+    "makespan": 0,
     "tasks": [
       {
-        "name": "Patser_id_000",
+        "name": "chr21_00000001",
         "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8,
-        "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_001",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_002",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_003",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_004",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_005",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_006",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_007",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_008",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_009",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_010",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_011",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_012",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_013",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_014",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_015",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_016",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_017",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Patser_id_018",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Transterm_id_000",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "FindTerm_id_000",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "RNAMotif_id_000",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "Blast_id_000",
-        "type": "compute",
-        "parents": [],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "PatserConcate_id_000",
-        "type": "compute",
+        "runtimeInSeconds": 110.953,
+        "command": {
+          "program": "chr21"
+        },
         "parents": [
-          "Patser_id_000",
-          "Patser_id_001",
-          "Patser_id_002",
-          "Patser_id_003",
-          "Patser_id_004",
-          "Patser_id_005",
-          "Patser_id_006",
-          "Patser_id_007",
-          "Patser_id_008",
-          "Patser_id_009",
-          "Patser_id_010",
-          "Patser_id_011",
-          "Patser_id_012",
-          "Patser_id_013",
-          "Patser_id_014",
-          "Patser_id_015",
-          "Patser_id_016",
-          "Patser_id_017",
-          "Patser_id_018"
+          "fast2bfq_00000003"
         ],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
+        "children": [ ]
       },
       {
-        "name": "SRNA_id_000",
+        "name": "mapMerge_00000002",
         "type": "compute",
-        "parents": [
-          "TransTerm_id_000",
-          "FindTerm_id_000",
-          "RNAMotif_id_000",
-          "Blast_id_000"
-        ],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
+        "runtimeInSeconds": 26.155,
+        "command": {
+          "program": "mapMerge"
+        },
+        "parents": [ ],
+        "children": [ ]
       },
       {
-        "name": "FFNParse_id_000",
+        "name": "fast2bfq_00000003",
         "type": "compute",
-        "parents": [
-          "SRNA_id_000"
-        ],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "BlastCandidate_id_000",
-        "type": "compute",
-        "parents": [
-          "SRNA_id_000"
-        ],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "BlastQRNA_id_000",
-        "type": "compute",
-        "parents": [
-          "SRNA_id_000"
-        ],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "BlastParalogues_id_000",
-        "type": "compute",
-        "parents": [
-          "SRNA_id_000"
-        ],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "BlastSynteny_id_000",
-        "type": "compute",
-        "parents": [
-          "SRNA_id_000",
-          "FFNParse_id_000"
-        ],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
-      },
-      {
-        "name": "SRNAannotate_id_000",
-        "type": "compute",
-        "parents": [
-          "BlastSynteny_id_000",
-          "BlastParalogues_id_000",
-          "BlastCandidate_id_000",
-          "BlastQRNA_id_000",
-          "PatserConcate_id_000"
-        ],
-        "runtimeInSeconds": 1e8, "machine": "cavalheiro"
+        "runtimeInSeconds": 4.02,
+        "command": {
+          "program": "fast2bfq"
+        },
+        "parents": [ ],
+        "children": [
+          "chr21_00000001"
+        ]
       }
     ]
   }

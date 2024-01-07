@@ -3,7 +3,7 @@
 <platform version="4.1">
     <zone id="ufpel" routing="Full">
         <host id="cavalheiro" speed="100f" core="4">
-            <disk id="sd_1" read_bw="200MBps" write_bw="100MBps"/>
+            <!-- <disk id="sd_1" read_bw="200MBps" write_bw="100MBps"/> -->
             <prop id="ram" value="1024"/>
             <prop id="start_date" value="0"/>
         </host>
@@ -13,12 +13,12 @@
             <prop id="ram" value="1024"/>
             <prop id="start_date" value="0"/>
         </host>
-        <host id="burlamaqui" speed="100Mf" core="4">
+        <host id="CloudHost" speed="100Mf" core="4">
             <disk id="sd_3" read_bw="200MBps" write_bw="100MBps"/>
             <prop id="ram" value="1024"/>
             <prop id="start_date" value="0"/>
         </host>
-        <host id="soares" speed="100Mf" core="4">
+        <host id="WmsHost" speed="100Mf" core="4">
             <disk id="sd_4" read_bw="200MBps" write_bw="100MBps"/>
             <prop id="ram" value="1024"/>
             <prop id="start_date" value="0"/>
@@ -41,28 +41,28 @@
         <route src="dubois" dst="dubois">
             <link_ctn id="loopback"/>
         </route>
-        <route src="burlamaqui" dst="burlamaqui">
+        <route src="CloudHost" dst="CloudHost">
             <link_ctn id="loopback"/>
         </route>
-        <route src="soares" dst="soares">
+        <route src="WmsHost" dst="WmsHost">
             <link_ctn id="loopback"/>
         </route>
         <route src="cavalheiro" dst="dubois">
             <link_ctn id="1"/>
         </route>
-        <route src="cavalheiro" dst="burlamaqui">
+        <route src="cavalheiro" dst="CloudHost">
             <link_ctn id="2"/>
         </route>
-        <route src="cavalheiro" dst="soares">
+        <route src="cavalheiro" dst="WmsHost">
             <link_ctn id="3"/>
         </route>
-        <route src="dubois" dst="burlamaqui">
+        <route src="dubois" dst="CloudHost">
             <link_ctn id="4"/>
         </route>
-        <route src="dubois" dst="soares">
+        <route src="dubois" dst="WmsHost">
             <link_ctn id="5"/>
         </route>
-        <route src="burlamaqui" dst="soares">
+        <route src="CloudHost" dst="WmsHost">
             <link_ctn id="6"/>
         </route>
     </zone>
