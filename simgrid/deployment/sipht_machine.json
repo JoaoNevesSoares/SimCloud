@@ -16,39 +16,49 @@
     "executedAt": "20240102T230606-0300",
     "makespan": 0,
     "tasks": [
+
       {
-        "name": "chr21_00000001",
+        "name": "5",
         "type": "compute",
         "runtimeInSeconds": 110.953,
-        "command": {
-          "program": "chr21"
-        },
         "parents": [
-          "fast2bfq_00000003"
         ],
-        "children": [ ]
+        "children": ["6"]
       },
       {
-        "name": "mapMerge_00000002",
+        "name": "2",
+        "type": "compute",
+        "runtimeInSeconds": 16.155,
+        "parents": [],
+        "children": ["6"]
+      },
+      {
+        "name": "4",
+        "type": "compute",
+        "runtimeInSeconds": 21.155,
+        "parents": ["1"],
+        "children": []
+      },
+      {
+        "name": "1",
+        "type": "compute",
+        "runtimeInSeconds": 12.155,
+        "parents": [],
+        "children": ["4"]
+      },
+      {
+        "name": "6",
         "type": "compute",
         "runtimeInSeconds": 26.155,
-        "command": {
-          "program": "mapMerge"
-        },
-        "parents": [ ],
-        "children": [ ]
+        "parents": ["2", "5","3"],
+        "children": []
       },
       {
-        "name": "fast2bfq_00000003",
+        "name": "3",
         "type": "compute",
-        "runtimeInSeconds": 4.02,
-        "command": {
-          "program": "fast2bfq"
-        },
-        "parents": [ ],
-        "children": [
-          "chr21_00000001"
-        ]
+        "runtimeInSeconds": 30.155,
+        "parents": [],
+        "children": ["6"]
       }
     ]
   }
