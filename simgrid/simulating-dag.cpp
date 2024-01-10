@@ -26,7 +26,6 @@ private:
     static Simulation* simulation;
     int scenario;
     static std::mt19937 rng;
-    std::map<simgrid::s4u::Host*,double> hosts_load;
 public:
     static Simulation* getInstance();
     void setScenario(int num) {
@@ -38,19 +37,6 @@ public:
     long getRand(long min, long max) {
         std::uniform_int_distribution<long> dist(min,max);
         return dist(rng);
-    }
-    double getHostLoad(simgrid::s4u::Host* host) {
-        return hosts_load[host];
-    }
-    void addHostLoad(simgrid::s4u::Host* host, double load) {
-        hosts_load[host] = load;
-    }
-    void updateResourceLoad(simgrid::s4u::VirtualMachine* vm) {
-        double old_load_on_percentage = vm->get_data<VmInfo>()->load_on_percentage;
-        updateVmInfo(vm);
-        double new_load_on_percentage = vm->get_data<VmInfo>()->load_on_percentage;
-        double increasing_load = (new_load_on_percentage -  old_load_on_percentage) * vm->get_core_count();
-        hosts_load[vm->get_pm()] += increasing_load;
     }
 };
 
@@ -78,15 +64,71 @@ bool safeForExecution(const simgrid::s4u::ActivityPtr& task) {
     return false;
 }
 
-std::vector<simgrid::s4u::VirtualMachine*> createAndInitializeVMs(simgrid::s4u::Host* host, int num_of_vms, int num_of_cores) {
-    std::vector<simgrid::s4u::VirtualMachine*> vms;
-    for(int i=0; i < num_of_vms; i++) {
-        std::string vm_name = "vm" + std::to_string(i);
+// Global variables
+//Temporary until I solve the cmakefile linking problem
+std::map<simgrid::s4u::Host*, double> hosts_load;
+std::map<std::string, std::vector<simgrid::s4u::VirtualMachine*>> vm_list;
+simgrid::s4u::Mailbox* platformServiceMailbox = nullptr;
+
+class PlatformService {
+public:
+    explicit PlatformService() = default;
+    explicit PlatformService(const std::vector<std::string>& args) {
+
+        for(auto& host: simgrid::s4u::Engine::get_instance()->get_all_hosts()) {
+            if(host->get_name() == "CloudHost"){
+                continue;
+            }
+            addHostLoad(host,0.0);
+        }
+        /* TODO: parse the xml platform file and create the platform */
+        // create a mailbox using the first argument of the actor
+        platformServiceMailbox = simgrid::s4u::Mailbox::by_name(args[0]);
+    }
+    void operator()() const /* This is the main code of the actor */
+    {
+        XBT_INFO("Hello!");
+        simgrid::s4u::Actor::self()->daemonize();
+        while(simgrid::s4u::this_actor::get_host()->is_on()) {
+            simgrid::s4u::this_actor::sleep_for(10);
+        }
+    }
+    static double getHostLoad(simgrid::s4u::Host* host) {
+        return hosts_load[host];
+    }
+    void addHostLoad(simgrid::s4u::Host* host, double load) {
+        hosts_load[host] = load;
+    }
+    static void updateResourceLoad(simgrid::s4u::VirtualMachine* vm) {
+        double old_load_on_percentage = vm->get_data<VmInfo>()->load_on_percentage;
+        updateVmInfo(vm);
+        double new_load_on_percentage = vm->get_data<VmInfo>()->load_on_percentage;
+        double increasing_load = (new_load_on_percentage -  old_load_on_percentage) * vm->get_core_count();
+        hosts_load[vm->get_pm()] += increasing_load;
+    }
+    static simgrid::s4u::VirtualMachine* createVm(std::string username,simgrid::s4u::Host* host, int num_of_cores) {
+        std::string vm_name;
+        if(!vm_list[username].empty()) {
+            vm_name = username + "_vm_" + std::to_string(vm_list[username].size()+1);
+        }
+        else {
+            vm_name = username + "_vm_1";
+        }
         simgrid::s4u::VirtualMachine* vm = host->create_vm(vm_name,num_of_cores);
         vm->start();
         // initialize info of vm usage
         vm->set_data(new VmInfo{0,0.0});
-        vms.push_back(vm);
+        vm_list[username].push_back(vm);
+        return vm;
+    }
+};
+
+//createAndInitializeVMs(host, num_of_vms, num_of_cores)
+std::vector<simgrid::s4u::VirtualMachine*> createAndInitializeVMs(const std::string& name, simgrid::s4u::Host* host, int num_of_vms, int num_of_cores) {
+    std::vector<simgrid::s4u::VirtualMachine*> vms;
+    vms.reserve(num_of_vms);
+    for(int i = 0; i < num_of_vms; i++) {
+            vms.push_back(PlatformService::createVm(name,host,num_of_cores));
     }
     return vms;
 }
@@ -105,9 +147,11 @@ static void cloudUser(int argc, char* argv[]) {
         num_of_cores = std::stoi(argv[3]);
     }
 
+    std::string username = argv[4];
+
     /* Create and start the corresponding number of VMs to this cloud user */
     // VMs are created and started on the host where the cloud user is running
-    auto vms = createAndInitializeVMs(host, num_of_vms, num_of_cores);
+    auto vms = createAndInitializeVMs(username,host,num_of_vms,num_of_cores);
     /* Create a DAG from a json file */
     auto workflow = simgrid::s4u::create_DAG_from_json(dag_filename);
 
@@ -117,7 +161,8 @@ static void cloudUser(int argc, char* argv[]) {
         for(auto& task: workflow) {
             auto* exec = dynamic_cast<simgrid::s4u::Exec*>(task.get());
             if(safeForExecution(task)) {
-                Simulation::getInstance()->updateResourceLoad(vm);
+                //Simulation::getInstance()->updateResourceLoad(vm);
+                PlatformService::updateResourceLoad(vm);
                 //updateVmInfo(vm);
                 exec->set_host(vm);
             }
@@ -127,7 +172,9 @@ static void cloudUser(int argc, char* argv[]) {
 
                 // In this simple case, we just assign the child task to a resource when its dependencies are solved
                 if (exec.dependencies_solved() && not exec.is_assigned()) {
-                    Simulation::getInstance()->updateResourceLoad(vm);
+
+                    //Simulation::getInstance()->updateResourceLoad(vm);
+                    PlatformService::updateResourceLoad(vm);
                     exec.set_host(vm);
                 }
             });
@@ -157,7 +204,7 @@ static void cloudUser(int argc, char* argv[]) {
         virtual_machine->destroy();
     }
     for(auto& pm : simgrid::s4u::Engine::get_instance()->get_all_hosts()) {
-        XBT_INFO("Host %s has load of %f",pm->get_cname(),Simulation::getInstance()->getHostLoad(pm));
+        XBT_INFO("Host %s has load of %f",pm->get_cname(),PlatformService::getHostLoad(pm));
     }
 }
 
@@ -177,18 +224,14 @@ int main(int argc, char **argv) {
      * */
     auto* simulation = Simulation::getInstance();
     simulation->setScenario(1);
-    for(auto& host: e.get_all_hosts()) {
-        simulation->addHostLoad(host,0.0);
-    }
     /* Loading and instantiate the platform from the XML description */
     e.load_platform(argv[2]);
-
     /* Load the cloud scenario */
     // first, "annotate" the code that will be executed by the cloud actors
+    e.register_actor<PlatformService>("platformService");
     e.register_function("cloudUser", cloudUser);
     // then, load the scenario
     e.load_deployment(argv[3]);
-
     // always load the live migration plugin
     sg_vm_live_migration_plugin_init();
     simgrid::s4u::Engine::get_instance();
