@@ -2,16 +2,16 @@
 <!DOCTYPE platform SYSTEM "https://simgrid.org/simgrid.dtd">
 <platform version="4.1">
   <!-- The cloud user actor (with some arguments) -->
-    <actor host="cavalheiro" function="user" start_time="0">
-         <argument value="/Users/jansoares/simcloud/simgrid/deployment/sipht.json"/>   <!-- Communication size of tasks -->
+    <actor host="cavalheiro" function="cloudUser" start_time="0">
+         <argument value="/Users/jansoares/simcloud/simgrid/deployment/seismology/seismologyrecipe-1000.json"/>   <!-- Communication size of tasks -->
          <argument value="4"/>   <!-- Number of VirtualMachines Allocated to User -->
          <argument value="1"/>   <!-- Number of Virtual Cores allocated to User VirtualMachine -->
-         <argument value="joao"/>  <!-- User Name -->
+         <argument value="user00"/>  <!-- User Name -->
     </actor>
-    <actor host="cavalheiro" function="user" start_time="0">
-        <argument value="/Users/jansoares/simcloud/simgrid/deployment/sipht.json"/>   <!-- Communication size of tasks -->
+    <actor host="dubois" function="cloudUser" start_time="0">
+        <argument value="/Users/jansoares/simcloud/simgrid/deployment/blast/blastrecipe-1000.json"/>   <!-- Communication size of tasks -->
         <argument value="4"/>   <!-- Number of VirtualMachines Allocated to User -->
         <argument value="1"/>   <!-- Number of Virtual Cores allocated to User VirtualMachine -->
-        <argument value="pedro"/>  <!-- User Name -->
+        <argument value="user01"/>  <!-- User Name -->
     </actor>
 </platform>

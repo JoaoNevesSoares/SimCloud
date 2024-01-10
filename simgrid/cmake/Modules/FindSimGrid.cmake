@@ -107,7 +107,9 @@ if (SimGrid_FOUND)
           ../../userLevelScheduling.cpp
           ../../automaticScheduling.cpp
           ../../eventdriven.cpp
-          ../../eventdriven.h)
+          ../../eventdriven.h
+          ../../simulating-dag.cpp
+  )
   set_target_properties(SimGrid::SimGrid PROPERTIES
     INTERFACE_SYSTEM_INCLUDE_DIRECTORIES ${SimGrid_INCLUDE_DIR}
     INTERFACE_COMPILE_FEATURES cxx_alias_templates
