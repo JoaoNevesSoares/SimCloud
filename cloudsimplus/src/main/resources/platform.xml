@@ -1,0 +1,26 @@
+<platform>
+    <datacenter id="ufpel_dc">
+        <host id="cavalheiro">
+            <pe id="core_0" mips="1000" />
+            <pe id="core_1" mips="1000" />
+            <pe id="core_2" mips="1000" />
+            <pe id="core_3" mips="1000" />
+        </host>
+    </datacenter>
+    <datacenter id="ifsul_dc">
+        <host id="dubois">
+            <pe id="core_0" mips="1000" />
+            <pe id="core_1" mips="1000" />
+            <pe id="core_2" mips="1000" />
+            <pe id="core_3" mips="1000" />
+        </host>
+    </datacenter>
+        <datacenter id="furg_dc">
+        <host id="burlamaqui">
+            <pe id="core_0" mips="1000" />
+            <pe id="core_1" mips="1000" />
+            <pe id="core_2" mips="1000" />
+            <pe id="core_3" mips="1000" />
+        </host>
+    </datacenter>
+</platform>
