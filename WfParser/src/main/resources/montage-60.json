@@ -1,0 +1,2470 @@
+{
+    "name": "Montage-synthetic-instance",
+    "description": "Instance generated with WfCommons - https://wfcommons.org",
+    "createdAt": "2024-05-07T13:00:16.344805+00:00",
+    "schemaVersion": "1.4",
+    "author": {
+        "name": "root",
+        "email": "support@wfcommons.org"
+    },
+    "wms": {
+        "name": "WfCommons",
+        "version": "1.0",
+        "url": "https://docs.wfcommons.org/en/v1.0/"
+    },
+    "workflow": {
+        "executedAt": "2024-05-07T13:00:16.344853+00:00",
+        "makespanInSeconds": 0,
+        "tasks": [
+            {
+                "name": "mProject_00000001",
+                "type": "compute",
+                "command": {
+                    "program": "mProject",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "mDiffFit_00000005",
+                    "mDiffFit_00000006",
+                    "mDiffFit_00000007",
+                    "mBackground_00000013"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "dd5de3b0-9acc-45b5-85a1-fbf66eb8e346.fits",
+                        "sizeInBytes": 382
+                    },
+                    {
+                        "link": "input",
+                        "name": "c0a1cd95-f68f-4af6-bb36-702edad36610.fits",
+                        "sizeInBytes": 834
+                    },
+                    {
+                        "link": "input",
+                        "name": "fb14fc9f-df77-47d8-9314-0a0e62b86c90.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 126348100.0,
+                "cores": 1,
+                "id": "00000001",
+                "category": "mProject",
+                "startedAt": "2024-05-07T13:00:16.358057+00:00"
+            },
+            {
+                "name": "mProject_00000002",
+                "type": "compute",
+                "command": {
+                    "program": "mProject",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "mDiffFit_00000005",
+                    "mDiffFit_00000008",
+                    "mDiffFit_00000009",
+                    "mBackground_00000014"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "f1bf2d16-9ab5-4f5e-9902-8d330935188e.fits",
+                        "sizeInBytes": 578
+                    },
+                    {
+                        "link": "input",
+                        "name": "7bff3048-4344-4993-bcb0-d79008dcc50f.fits",
+                        "sizeInBytes": 586
+                    },
+                    {
+                        "link": "input",
+                        "name": "35c5f8be-4799-40f4-ae3b-937394792907.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 126348100.0,
+                "cores": 1,
+                "id": "00000002",
+                "category": "mProject",
+                "startedAt": "2024-05-07T13:00:16.358344+00:00"
+            },
+            {
+                "name": "mProject_00000003",
+                "type": "compute",
+                "command": {
+                    "program": "mProject",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "mDiffFit_00000006",
+                    "mDiffFit_00000008",
+                    "mDiffFit_00000010",
+                    "mBackground_00000015"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "caa661e2-6821-4883-af2c-a1194fc25446.fits",
+                        "sizeInBytes": 511
+                    },
+                    {
+                        "link": "input",
+                        "name": "cc1de96e-63ee-4db7-92ea-462afb8161ae.fits",
+                        "sizeInBytes": 171
+                    },
+                    {
+                        "link": "input",
+                        "name": "1fc2b3b2-b404-4930-b0e9-ef7b07dea295.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 126348100.0,
+                "cores": 1,
+                "id": "00000003",
+                "category": "mProject",
+                "startedAt": "2024-05-07T13:00:16.358489+00:00"
+            },
+            {
+                "name": "mProject_00000004",
+                "type": "compute",
+                "command": {
+                    "program": "mProject",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "mDiffFit_00000007",
+                    "mDiffFit_00000009",
+                    "mDiffFit_00000010",
+                    "mBackground_00000016"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "f383f2d9-a1d1-42d6-897b-f6acb2a8a0e4.fits",
+                        "sizeInBytes": 432
+                    },
+                    {
+                        "link": "input",
+                        "name": "406207c9-2963-450b-aa4b-48dd7ac006a9.fits",
+                        "sizeInBytes": 1019
+                    },
+                    {
+                        "link": "input",
+                        "name": "8636f6b9-0c16-418e-affb-395d161db3fa.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 126348100.0,
+                "cores": 1,
+                "id": "00000004",
+                "category": "mProject",
+                "startedAt": "2024-05-07T13:00:16.358626+00:00"
+            },
+            {
+                "name": "mDiffFit_00000005",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000001",
+                    "mProject_00000002"
+                ],
+                "children": [
+                    "mConcatFit_00000011"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "8e706e5f-7b1c-4a5b-a164-7b0e37de9af7.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "dd5de3b0-9acc-45b5-85a1-fbf66eb8e346.fits",
+                        "sizeInBytes": 382
+                    },
+                    {
+                        "link": "input",
+                        "name": "f1bf2d16-9ab5-4f5e-9902-8d330935188e.fits",
+                        "sizeInBytes": 578
+                    },
+                    {
+                        "link": "input",
+                        "name": "7c787b52-71eb-488b-a3b6-a36b65594028.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000005",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.359097+00:00"
+            },
+            {
+                "name": "mDiffFit_00000006",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000001",
+                    "mProject_00000003"
+                ],
+                "children": [
+                    "mConcatFit_00000011"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "df6fccc1-5216-4fa5-b664-f059ba0e69b4.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "dd5de3b0-9acc-45b5-85a1-fbf66eb8e346.fits",
+                        "sizeInBytes": 382
+                    },
+                    {
+                        "link": "input",
+                        "name": "caa661e2-6821-4883-af2c-a1194fc25446.fits",
+                        "sizeInBytes": 511
+                    },
+                    {
+                        "link": "input",
+                        "name": "4a83f5ad-1fb8-4c58-9fdc-1292714cd006.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000006",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.359265+00:00"
+            },
+            {
+                "name": "mDiffFit_00000007",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000001",
+                    "mProject_00000004"
+                ],
+                "children": [
+                    "mConcatFit_00000011"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "685b9c17-cc53-436c-8c90-fb548471ee36.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "dd5de3b0-9acc-45b5-85a1-fbf66eb8e346.fits",
+                        "sizeInBytes": 382
+                    },
+                    {
+                        "link": "input",
+                        "name": "f383f2d9-a1d1-42d6-897b-f6acb2a8a0e4.fits",
+                        "sizeInBytes": 432
+                    },
+                    {
+                        "link": "input",
+                        "name": "fa1eed05-a86e-4449-9ae2-d8767d0f02be.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000007",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.359399+00:00"
+            },
+            {
+                "name": "mDiffFit_00000008",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000002",
+                    "mProject_00000003"
+                ],
+                "children": [
+                    "mConcatFit_00000011"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "bd0af83c-53a5-4cc5-9dd2-ce71d8e8984b.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f1bf2d16-9ab5-4f5e-9902-8d330935188e.fits",
+                        "sizeInBytes": 578
+                    },
+                    {
+                        "link": "input",
+                        "name": "caa661e2-6821-4883-af2c-a1194fc25446.fits",
+                        "sizeInBytes": 511
+                    },
+                    {
+                        "link": "input",
+                        "name": "33869831-d8a2-491f-af97-fd2bc09edebb.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000008",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.359525+00:00"
+            },
+            {
+                "name": "mDiffFit_00000009",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000002",
+                    "mProject_00000004"
+                ],
+                "children": [
+                    "mConcatFit_00000011"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "4c94b71e-a0cf-46ec-ac55-7df07ca39811.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f1bf2d16-9ab5-4f5e-9902-8d330935188e.fits",
+                        "sizeInBytes": 578
+                    },
+                    {
+                        "link": "input",
+                        "name": "f383f2d9-a1d1-42d6-897b-f6acb2a8a0e4.fits",
+                        "sizeInBytes": 432
+                    },
+                    {
+                        "link": "input",
+                        "name": "2b748bb4-69c4-447b-8490-aa03f6427d0b.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000009",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.359651+00:00"
+            },
+            {
+                "name": "mDiffFit_00000010",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000003",
+                    "mProject_00000004"
+                ],
+                "children": [
+                    "mConcatFit_00000011"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "cc0dc3b1-89d5-43c6-bc30-ba632a6b7031.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "caa661e2-6821-4883-af2c-a1194fc25446.fits",
+                        "sizeInBytes": 511
+                    },
+                    {
+                        "link": "input",
+                        "name": "f383f2d9-a1d1-42d6-897b-f6acb2a8a0e4.fits",
+                        "sizeInBytes": 432
+                    },
+                    {
+                        "link": "input",
+                        "name": "45116ad9-ec12-4039-ae8a-17f016f848d9.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000010",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.359779+00:00"
+            },
+            {
+                "name": "mConcatFit_00000011",
+                "type": "compute",
+                "command": {
+                    "program": "mConcatFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mDiffFit_00000005",
+                    "mDiffFit_00000006",
+                    "mDiffFit_00000007",
+                    "mDiffFit_00000008",
+                    "mDiffFit_00000009",
+                    "mDiffFit_00000010"
+                ],
+                "children": [
+                    "mBgModel_00000012"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "4066be74-c25a-45fa-8eb6-b2eb41e60a71.tbl",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8e706e5f-7b1c-4a5b-a164-7b0e37de9af7.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "df6fccc1-5216-4fa5-b664-f059ba0e69b4.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "685b9c17-cc53-436c-8c90-fb548471ee36.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "bd0af83c-53a5-4cc5-9dd2-ce71d8e8984b.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "4c94b71e-a0cf-46ec-ac55-7df07ca39811.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "cc0dc3b1-89d5-43c6-bc30-ba632a6b7031.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "ed32503c-44c9-4821-946d-d65f9e45af98.tbl",
+                        "sizeInBytes": 2
+                    }
+                ],
+                "runtimeInSeconds": 123860.0,
+                "cores": 1,
+                "id": "00000011",
+                "category": "mConcatFit",
+                "startedAt": "2024-05-07T13:00:16.360148+00:00"
+            },
+            {
+                "name": "mBgModel_00000012",
+                "type": "compute",
+                "command": {
+                    "program": "mBgModel",
+                    "arguments": []
+                },
+                "parents": [
+                    "mConcatFit_00000011"
+                ],
+                "children": [
+                    "mBackground_00000013",
+                    "mBackground_00000014",
+                    "mBackground_00000015",
+                    "mBackground_00000016"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "0d7b29d5-9961-444a-8082-46acc6b6511f.tbl",
+                        "sizeInBytes": 11
+                    },
+                    {
+                        "link": "input",
+                        "name": "4066be74-c25a-45fa-8eb6-b2eb41e60a71.tbl",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 1105290.0,
+                "cores": 1,
+                "id": "00000012",
+                "category": "mBgModel",
+                "startedAt": "2024-05-07T13:00:16.360405+00:00"
+            },
+            {
+                "name": "mBackground_00000013",
+                "type": "compute",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000001",
+                    "mBgModel_00000012"
+                ],
+                "children": [
+                    "mImgtbl_00000017",
+                    "mAdd_00000018"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "44e8363f-f3f7-4624-a4fa-e368b669f1fe.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "dd5de3b0-9acc-45b5-85a1-fbf66eb8e346.fits",
+                        "sizeInBytes": 382
+                    },
+                    {
+                        "link": "input",
+                        "name": "0d7b29d5-9961-444a-8082-46acc6b6511f.tbl",
+                        "sizeInBytes": 11
+                    }
+                ],
+                "runtimeInSeconds": 11410300.0,
+                "cores": 1,
+                "id": "00000013",
+                "category": "mBackground",
+                "startedAt": "2024-05-07T13:00:16.360557+00:00"
+            },
+            {
+                "name": "mBackground_00000014",
+                "type": "compute",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000002",
+                    "mBgModel_00000012"
+                ],
+                "children": [
+                    "mImgtbl_00000017",
+                    "mAdd_00000018"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "108b16f1-0077-4397-af28-f854416a7c22.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "f1bf2d16-9ab5-4f5e-9902-8d330935188e.fits",
+                        "sizeInBytes": 578
+                    },
+                    {
+                        "link": "input",
+                        "name": "0d7b29d5-9961-444a-8082-46acc6b6511f.tbl",
+                        "sizeInBytes": 11
+                    }
+                ],
+                "runtimeInSeconds": 11410300.0,
+                "cores": 1,
+                "id": "00000014",
+                "category": "mBackground",
+                "startedAt": "2024-05-07T13:00:16.360687+00:00"
+            },
+            {
+                "name": "mBackground_00000015",
+                "type": "compute",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000003",
+                    "mBgModel_00000012"
+                ],
+                "children": [
+                    "mImgtbl_00000017",
+                    "mAdd_00000018"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "197b455f-764c-4ae9-ad6a-70bd4bdbbaea.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "caa661e2-6821-4883-af2c-a1194fc25446.fits",
+                        "sizeInBytes": 511
+                    },
+                    {
+                        "link": "input",
+                        "name": "0d7b29d5-9961-444a-8082-46acc6b6511f.tbl",
+                        "sizeInBytes": 11
+                    }
+                ],
+                "runtimeInSeconds": 11410300.0,
+                "cores": 1,
+                "id": "00000015",
+                "category": "mBackground",
+                "startedAt": "2024-05-07T13:00:16.360813+00:00"
+            },
+            {
+                "name": "mBackground_00000016",
+                "type": "compute",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000004",
+                    "mBgModel_00000012"
+                ],
+                "children": [
+                    "mImgtbl_00000017",
+                    "mAdd_00000018"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "4b39cd60-b073-4220-8245-26681cdb78e0.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "f383f2d9-a1d1-42d6-897b-f6acb2a8a0e4.fits",
+                        "sizeInBytes": 432
+                    },
+                    {
+                        "link": "input",
+                        "name": "0d7b29d5-9961-444a-8082-46acc6b6511f.tbl",
+                        "sizeInBytes": 11
+                    }
+                ],
+                "runtimeInSeconds": 11410300.0,
+                "cores": 1,
+                "id": "00000016",
+                "category": "mBackground",
+                "startedAt": "2024-05-07T13:00:16.360965+00:00"
+            },
+            {
+                "name": "mImgtbl_00000017",
+                "type": "compute",
+                "command": {
+                    "program": "mImgtbl",
+                    "arguments": []
+                },
+                "parents": [
+                    "mBackground_00000013",
+                    "mBackground_00000014",
+                    "mBackground_00000015",
+                    "mBackground_00000016"
+                ],
+                "children": [
+                    "mAdd_00000018"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "db41e4da-87f5-4fb8-a9e6-e332f2b94559.tbl",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "44e8363f-f3f7-4624-a4fa-e368b669f1fe.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "108b16f1-0077-4397-af28-f854416a7c22.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "197b455f-764c-4ae9-ad6a-70bd4bdbbaea.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "4b39cd60-b073-4220-8245-26681cdb78e0.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "7bdb40e9-20ad-4319-af87-ff566bd747ad.tbl",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 54155.789,
+                "cores": 1,
+                "id": "00000017",
+                "category": "mImgtbl",
+                "startedAt": "2024-05-07T13:00:16.361118+00:00"
+            },
+            {
+                "name": "mAdd_00000018",
+                "type": "compute",
+                "command": {
+                    "program": "mAdd",
+                    "arguments": []
+                },
+                "parents": [
+                    "mBackground_00000013",
+                    "mBackground_00000014",
+                    "mBackground_00000015",
+                    "mBackground_00000016",
+                    "mImgtbl_00000017"
+                ],
+                "children": [
+                    "mViewer_00000019",
+                    "mViewer_00000058"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "5584393a-025a-4126-9176-ed0801d2b733.fits",
+                        "sizeInBytes": 4147
+                    },
+                    {
+                        "link": "input",
+                        "name": "44e8363f-f3f7-4624-a4fa-e368b669f1fe.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "108b16f1-0077-4397-af28-f854416a7c22.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "197b455f-764c-4ae9-ad6a-70bd4bdbbaea.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "4b39cd60-b073-4220-8245-26681cdb78e0.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "db41e4da-87f5-4fb8-a9e6-e332f2b94559.tbl",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "ab0019a4-1401-4eb0-aaac-ae6e8be86e64.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 231620.0,
+                "cores": 1,
+                "id": "00000018",
+                "category": "mAdd",
+                "startedAt": "2024-05-07T13:00:16.361250+00:00"
+            },
+            {
+                "name": "mViewer_00000019",
+                "type": "compute",
+                "command": {
+                    "program": "mViewer",
+                    "arguments": []
+                },
+                "parents": [
+                    "mAdd_00000018"
+                ],
+                "children": [],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "12f6c4a3-a972-4140-ae89-201636b90011.jpg",
+                        "sizeInBytes": 101
+                    },
+                    {
+                        "link": "output",
+                        "name": "da8e8549-729b-4a01-9227-1ad96910e640.png",
+                        "sizeInBytes": 26
+                    },
+                    {
+                        "link": "input",
+                        "name": "5584393a-025a-4126-9176-ed0801d2b733.fits",
+                        "sizeInBytes": 4147
+                    }
+                ],
+                "runtimeInSeconds": 6836800.0,
+                "cores": 1,
+                "id": "00000019",
+                "category": "mViewer",
+                "startedAt": "2024-05-07T13:00:16.361378+00:00"
+            },
+            {
+                "name": "mProject_00000020",
+                "type": "compute",
+                "command": {
+                    "program": "mProject",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "mDiffFit_00000024",
+                    "mDiffFit_00000025",
+                    "mDiffFit_00000026",
+                    "mBackground_00000032"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "c0c2a449-311c-494f-bbb4-8723ca7c0cb1.fits",
+                        "sizeInBytes": 544
+                    },
+                    {
+                        "link": "input",
+                        "name": "9978424d-f0cd-4504-8e8c-3fa8ed157fc1.fits",
+                        "sizeInBytes": 459
+                    },
+                    {
+                        "link": "input",
+                        "name": "03632f70-21b9-4c1f-9ac6-e86d75c3bf41.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 126348100.0,
+                "cores": 1,
+                "id": "00000020",
+                "category": "mProject",
+                "startedAt": "2024-05-07T13:00:16.361504+00:00"
+            },
+            {
+                "name": "mProject_00000021",
+                "type": "compute",
+                "command": {
+                    "program": "mProject",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "mDiffFit_00000024",
+                    "mDiffFit_00000027",
+                    "mDiffFit_00000028",
+                    "mBackground_00000033"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "08db5d24-d549-4011-84eb-5e0eb99aee40.fits",
+                        "sizeInBytes": 576
+                    },
+                    {
+                        "link": "input",
+                        "name": "6ab85118-d08a-4de9-9c39-f0cfd3b18a16.fits",
+                        "sizeInBytes": 662
+                    },
+                    {
+                        "link": "input",
+                        "name": "953347dc-162d-4db1-815c-20f5f20eb3cd.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 126348100.0,
+                "cores": 1,
+                "id": "00000021",
+                "category": "mProject",
+                "startedAt": "2024-05-07T13:00:16.361630+00:00"
+            },
+            {
+                "name": "mProject_00000022",
+                "type": "compute",
+                "command": {
+                    "program": "mProject",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "mDiffFit_00000025",
+                    "mDiffFit_00000027",
+                    "mDiffFit_00000029",
+                    "mBackground_00000034"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "15424436-1eef-4cd3-b0e1-9b320de95e2d.fits",
+                        "sizeInBytes": 126
+                    },
+                    {
+                        "link": "input",
+                        "name": "ad132fbe-2d47-4edf-a4d7-40cbb03ad215.fits",
+                        "sizeInBytes": 914
+                    },
+                    {
+                        "link": "input",
+                        "name": "0233f7c6-8a34-4f01-8b87-5f613a0dac40.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 126348100.0,
+                "cores": 1,
+                "id": "00000022",
+                "category": "mProject",
+                "startedAt": "2024-05-07T13:00:16.361758+00:00"
+            },
+            {
+                "name": "mProject_00000023",
+                "type": "compute",
+                "command": {
+                    "program": "mProject",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "mDiffFit_00000026",
+                    "mDiffFit_00000028",
+                    "mDiffFit_00000029",
+                    "mBackground_00000035"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "5f10f592-81b5-42e7-a9d1-4d5cf085b360.fits",
+                        "sizeInBytes": 570
+                    },
+                    {
+                        "link": "input",
+                        "name": "a137e902-6475-472f-9e6f-1fe95392b6b3.fits",
+                        "sizeInBytes": 104
+                    },
+                    {
+                        "link": "input",
+                        "name": "84b97d66-703f-4d54-bb1c-0b307a5313a3.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 126348100.0,
+                "cores": 1,
+                "id": "00000023",
+                "category": "mProject",
+                "startedAt": "2024-05-07T13:00:16.361924+00:00"
+            },
+            {
+                "name": "mDiffFit_00000024",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000020",
+                    "mProject_00000021"
+                ],
+                "children": [
+                    "mConcatFit_00000030"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "d67f3516-28bc-4877-a79c-b13e422cc936.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c0c2a449-311c-494f-bbb4-8723ca7c0cb1.fits",
+                        "sizeInBytes": 544
+                    },
+                    {
+                        "link": "input",
+                        "name": "08db5d24-d549-4011-84eb-5e0eb99aee40.fits",
+                        "sizeInBytes": 576
+                    },
+                    {
+                        "link": "input",
+                        "name": "baa0296e-c9c7-4732-9196-8771162dd399.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000024",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.362073+00:00"
+            },
+            {
+                "name": "mDiffFit_00000025",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000020",
+                    "mProject_00000022"
+                ],
+                "children": [
+                    "mConcatFit_00000030"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "e849dd12-bd5b-4ce3-81d4-8613fb689982.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c0c2a449-311c-494f-bbb4-8723ca7c0cb1.fits",
+                        "sizeInBytes": 544
+                    },
+                    {
+                        "link": "input",
+                        "name": "15424436-1eef-4cd3-b0e1-9b320de95e2d.fits",
+                        "sizeInBytes": 126
+                    },
+                    {
+                        "link": "input",
+                        "name": "e416921a-699f-4da9-8204-b032d541e0f8.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000025",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.362199+00:00"
+            },
+            {
+                "name": "mDiffFit_00000026",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000020",
+                    "mProject_00000023"
+                ],
+                "children": [
+                    "mConcatFit_00000030"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "4689cb3a-3cba-41e7-b72b-a35553ed56c4.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c0c2a449-311c-494f-bbb4-8723ca7c0cb1.fits",
+                        "sizeInBytes": 544
+                    },
+                    {
+                        "link": "input",
+                        "name": "5f10f592-81b5-42e7-a9d1-4d5cf085b360.fits",
+                        "sizeInBytes": 570
+                    },
+                    {
+                        "link": "input",
+                        "name": "256115c6-cbf0-4bad-9e88-d18fab4d4f99.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000026",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.362320+00:00"
+            },
+            {
+                "name": "mDiffFit_00000027",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000021",
+                    "mProject_00000022"
+                ],
+                "children": [
+                    "mConcatFit_00000030"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "c2b9d78c-ba46-4065-9cdf-f50f8f89cbd8.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "08db5d24-d549-4011-84eb-5e0eb99aee40.fits",
+                        "sizeInBytes": 576
+                    },
+                    {
+                        "link": "input",
+                        "name": "15424436-1eef-4cd3-b0e1-9b320de95e2d.fits",
+                        "sizeInBytes": 126
+                    },
+                    {
+                        "link": "input",
+                        "name": "7a662400-8e3a-42e5-a2aa-f7f14883d899.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000027",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.362449+00:00"
+            },
+            {
+                "name": "mDiffFit_00000028",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000021",
+                    "mProject_00000023"
+                ],
+                "children": [
+                    "mConcatFit_00000030"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "aeaca512-57bf-40ca-9328-c3b88af93fed.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "08db5d24-d549-4011-84eb-5e0eb99aee40.fits",
+                        "sizeInBytes": 576
+                    },
+                    {
+                        "link": "input",
+                        "name": "5f10f592-81b5-42e7-a9d1-4d5cf085b360.fits",
+                        "sizeInBytes": 570
+                    },
+                    {
+                        "link": "input",
+                        "name": "565092aa-c8c6-42d6-a2bf-6727db386c7c.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000028",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.362574+00:00"
+            },
+            {
+                "name": "mDiffFit_00000029",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000022",
+                    "mProject_00000023"
+                ],
+                "children": [
+                    "mConcatFit_00000030"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "50e8dad4-d9c7-408e-a360-e997461b993f.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "15424436-1eef-4cd3-b0e1-9b320de95e2d.fits",
+                        "sizeInBytes": 126
+                    },
+                    {
+                        "link": "input",
+                        "name": "5f10f592-81b5-42e7-a9d1-4d5cf085b360.fits",
+                        "sizeInBytes": 570
+                    },
+                    {
+                        "link": "input",
+                        "name": "ff8333f1-d20d-4ed8-9461-2f946a90af13.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000029",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.362694+00:00"
+            },
+            {
+                "name": "mConcatFit_00000030",
+                "type": "compute",
+                "command": {
+                    "program": "mConcatFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mDiffFit_00000024",
+                    "mDiffFit_00000025",
+                    "mDiffFit_00000026",
+                    "mDiffFit_00000027",
+                    "mDiffFit_00000028",
+                    "mDiffFit_00000029"
+                ],
+                "children": [
+                    "mBgModel_00000031"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "1291dcee-4b67-4708-8344-3ed367769733.tbl",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "d67f3516-28bc-4877-a79c-b13e422cc936.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "e849dd12-bd5b-4ce3-81d4-8613fb689982.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "4689cb3a-3cba-41e7-b72b-a35553ed56c4.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c2b9d78c-ba46-4065-9cdf-f50f8f89cbd8.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "aeaca512-57bf-40ca-9328-c3b88af93fed.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "50e8dad4-d9c7-408e-a360-e997461b993f.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "95ef1c2a-3f79-429a-af6a-dfcb1971c56f.tbl",
+                        "sizeInBytes": 2
+                    }
+                ],
+                "runtimeInSeconds": 286952.339,
+                "cores": 1,
+                "id": "00000030",
+                "category": "mConcatFit",
+                "startedAt": "2024-05-07T13:00:16.363007+00:00"
+            },
+            {
+                "name": "mBgModel_00000031",
+                "type": "compute",
+                "command": {
+                    "program": "mBgModel",
+                    "arguments": []
+                },
+                "parents": [
+                    "mConcatFit_00000030"
+                ],
+                "children": [
+                    "mBackground_00000032",
+                    "mBackground_00000033",
+                    "mBackground_00000034",
+                    "mBackground_00000035"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "84dae068-caef-4c9e-b883-cf291d2a14e9.tbl",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "1291dcee-4b67-4708-8344-3ed367769733.tbl",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 367251702.125,
+                "cores": 1,
+                "id": "00000031",
+                "category": "mBgModel",
+                "startedAt": "2024-05-07T13:00:16.363268+00:00"
+            },
+            {
+                "name": "mBackground_00000032",
+                "type": "compute",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000020",
+                    "mBgModel_00000031"
+                ],
+                "children": [
+                    "mImgtbl_00000036",
+                    "mAdd_00000037"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "edb2f227-0d3b-499a-a79b-8e858b8db4cb.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "c0c2a449-311c-494f-bbb4-8723ca7c0cb1.fits",
+                        "sizeInBytes": 544
+                    },
+                    {
+                        "link": "input",
+                        "name": "84dae068-caef-4c9e-b883-cf291d2a14e9.tbl",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 11410300.0,
+                "cores": 1,
+                "id": "00000032",
+                "category": "mBackground",
+                "startedAt": "2024-05-07T13:00:16.363408+00:00"
+            },
+            {
+                "name": "mBackground_00000033",
+                "type": "compute",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000021",
+                    "mBgModel_00000031"
+                ],
+                "children": [
+                    "mImgtbl_00000036",
+                    "mAdd_00000037"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "0e1506db-3410-4be3-8d38-6642d13238db.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "08db5d24-d549-4011-84eb-5e0eb99aee40.fits",
+                        "sizeInBytes": 576
+                    },
+                    {
+                        "link": "input",
+                        "name": "84dae068-caef-4c9e-b883-cf291d2a14e9.tbl",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 11410300.0,
+                "cores": 1,
+                "id": "00000033",
+                "category": "mBackground",
+                "startedAt": "2024-05-07T13:00:16.363533+00:00"
+            },
+            {
+                "name": "mBackground_00000034",
+                "type": "compute",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000022",
+                    "mBgModel_00000031"
+                ],
+                "children": [
+                    "mImgtbl_00000036",
+                    "mAdd_00000037"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "1bb328bb-17d9-45a3-a5e7-6de29f191a19.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "15424436-1eef-4cd3-b0e1-9b320de95e2d.fits",
+                        "sizeInBytes": 126
+                    },
+                    {
+                        "link": "input",
+                        "name": "84dae068-caef-4c9e-b883-cf291d2a14e9.tbl",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 11410300.0,
+                "cores": 1,
+                "id": "00000034",
+                "category": "mBackground",
+                "startedAt": "2024-05-07T13:00:16.363657+00:00"
+            },
+            {
+                "name": "mBackground_00000035",
+                "type": "compute",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000023",
+                    "mBgModel_00000031"
+                ],
+                "children": [
+                    "mImgtbl_00000036",
+                    "mAdd_00000037"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "be04a6f8-1a12-4a1c-9b63-2be95f06d79a.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "5f10f592-81b5-42e7-a9d1-4d5cf085b360.fits",
+                        "sizeInBytes": 570
+                    },
+                    {
+                        "link": "input",
+                        "name": "84dae068-caef-4c9e-b883-cf291d2a14e9.tbl",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 11410300.0,
+                "cores": 1,
+                "id": "00000035",
+                "category": "mBackground",
+                "startedAt": "2024-05-07T13:00:16.363780+00:00"
+            },
+            {
+                "name": "mImgtbl_00000036",
+                "type": "compute",
+                "command": {
+                    "program": "mImgtbl",
+                    "arguments": []
+                },
+                "parents": [
+                    "mBackground_00000032",
+                    "mBackground_00000033",
+                    "mBackground_00000034",
+                    "mBackground_00000035"
+                ],
+                "children": [
+                    "mAdd_00000037"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "8299ba70-5d45-4e7c-b633-9b583df13f80.tbl",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "edb2f227-0d3b-499a-a79b-8e858b8db4cb.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "0e1506db-3410-4be3-8d38-6642d13238db.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "1bb328bb-17d9-45a3-a5e7-6de29f191a19.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "be04a6f8-1a12-4a1c-9b63-2be95f06d79a.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "1fb2f974-8314-43f0-a5a3-4c2e3f5961a4.tbl",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 17620.0,
+                "cores": 1,
+                "id": "00000036",
+                "category": "mImgtbl",
+                "startedAt": "2024-05-07T13:00:16.363932+00:00"
+            },
+            {
+                "name": "mAdd_00000037",
+                "type": "compute",
+                "command": {
+                    "program": "mAdd",
+                    "arguments": []
+                },
+                "parents": [
+                    "mBackground_00000032",
+                    "mBackground_00000033",
+                    "mBackground_00000034",
+                    "mBackground_00000035",
+                    "mImgtbl_00000036"
+                ],
+                "children": [
+                    "mViewer_00000038",
+                    "mViewer_00000058"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "93074485-c7d7-446c-aa6b-f4162235d95e.fits",
+                        "sizeInBytes": 4147
+                    },
+                    {
+                        "link": "input",
+                        "name": "edb2f227-0d3b-499a-a79b-8e858b8db4cb.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "0e1506db-3410-4be3-8d38-6642d13238db.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "1bb328bb-17d9-45a3-a5e7-6de29f191a19.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "be04a6f8-1a12-4a1c-9b63-2be95f06d79a.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "8299ba70-5d45-4e7c-b633-9b583df13f80.tbl",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "6e36dbc7-3b1e-4a2f-ae06-531258bb0906.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 2316185.141,
+                "cores": 1,
+                "id": "00000037",
+                "category": "mAdd",
+                "startedAt": "2024-05-07T13:00:16.364077+00:00"
+            },
+            {
+                "name": "mViewer_00000038",
+                "type": "compute",
+                "command": {
+                    "program": "mViewer",
+                    "arguments": []
+                },
+                "parents": [
+                    "mAdd_00000037"
+                ],
+                "children": [],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "43e5590c-2e63-407b-83a6-dc31486e4d88.jpg",
+                        "sizeInBytes": 101
+                    },
+                    {
+                        "link": "output",
+                        "name": "613e1440-cbbb-435b-a0ed-1ce4bddc5937.png",
+                        "sizeInBytes": 26
+                    },
+                    {
+                        "link": "input",
+                        "name": "93074485-c7d7-446c-aa6b-f4162235d95e.fits",
+                        "sizeInBytes": 4147
+                    }
+                ],
+                "runtimeInSeconds": 6836800.0,
+                "cores": 1,
+                "id": "00000038",
+                "category": "mViewer",
+                "startedAt": "2024-05-07T13:00:16.364211+00:00"
+            },
+            {
+                "name": "mProject_00000039",
+                "type": "compute",
+                "command": {
+                    "program": "mProject",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "mDiffFit_00000043",
+                    "mDiffFit_00000044",
+                    "mDiffFit_00000045",
+                    "mBackground_00000051"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "815acbdd-cb68-4acb-9f8e-5d8773597a68.fits",
+                        "sizeInBytes": 531
+                    },
+                    {
+                        "link": "input",
+                        "name": "fad80959-cd51-4b71-b01e-41e6696a0017.fits",
+                        "sizeInBytes": 593
+                    },
+                    {
+                        "link": "input",
+                        "name": "f49f6e41-55ed-4bf2-b539-afbb07a3045e.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 126348100.0,
+                "cores": 1,
+                "id": "00000039",
+                "category": "mProject",
+                "startedAt": "2024-05-07T13:00:16.364336+00:00"
+            },
+            {
+                "name": "mProject_00000040",
+                "type": "compute",
+                "command": {
+                    "program": "mProject",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "mDiffFit_00000043",
+                    "mDiffFit_00000046",
+                    "mDiffFit_00000047",
+                    "mBackground_00000052"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "f8851383-b5cb-4eb1-917d-befaafa98415.fits",
+                        "sizeInBytes": 577
+                    },
+                    {
+                        "link": "input",
+                        "name": "702a5aba-bc7a-433b-ac5d-fae7e6a62980.fits",
+                        "sizeInBytes": 641
+                    },
+                    {
+                        "link": "input",
+                        "name": "db5af1c5-f398-4848-b3dc-7347852c569a.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 126348100.0,
+                "cores": 1,
+                "id": "00000040",
+                "category": "mProject",
+                "startedAt": "2024-05-07T13:00:16.364460+00:00"
+            },
+            {
+                "name": "mProject_00000041",
+                "type": "compute",
+                "command": {
+                    "program": "mProject",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "mDiffFit_00000044",
+                    "mDiffFit_00000046",
+                    "mDiffFit_00000048",
+                    "mBackground_00000053"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "93f3ded6-6a91-445a-9ad6-32314b9e8dc1.fits",
+                        "sizeInBytes": 455
+                    },
+                    {
+                        "link": "input",
+                        "name": "52a00f71-9d49-4784-a706-1de0af8c3a23.fits",
+                        "sizeInBytes": 822
+                    },
+                    {
+                        "link": "input",
+                        "name": "f4c540fc-2f92-4708-a7e8-d7498bcda73d.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 126348100.0,
+                "cores": 1,
+                "id": "00000041",
+                "category": "mProject",
+                "startedAt": "2024-05-07T13:00:16.364583+00:00"
+            },
+            {
+                "name": "mProject_00000042",
+                "type": "compute",
+                "command": {
+                    "program": "mProject",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "mDiffFit_00000045",
+                    "mDiffFit_00000047",
+                    "mDiffFit_00000048",
+                    "mBackground_00000054"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "37a75ca8-e4f8-411f-8f7f-f08c1ab407fc.fits",
+                        "sizeInBytes": 533
+                    },
+                    {
+                        "link": "input",
+                        "name": "83afaff9-5a17-4a3c-8295-378b35e27a38.fits",
+                        "sizeInBytes": 855
+                    },
+                    {
+                        "link": "input",
+                        "name": "b8661a62-ae5e-440e-bef4-c1205754efb1.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 126348100.0,
+                "cores": 1,
+                "id": "00000042",
+                "category": "mProject",
+                "startedAt": "2024-05-07T13:00:16.364703+00:00"
+            },
+            {
+                "name": "mDiffFit_00000043",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000039",
+                    "mProject_00000040"
+                ],
+                "children": [
+                    "mConcatFit_00000049"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "82cc2e13-97a9-4166-8d1e-8308489172c2.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "815acbdd-cb68-4acb-9f8e-5d8773597a68.fits",
+                        "sizeInBytes": 531
+                    },
+                    {
+                        "link": "input",
+                        "name": "f8851383-b5cb-4eb1-917d-befaafa98415.fits",
+                        "sizeInBytes": 577
+                    },
+                    {
+                        "link": "input",
+                        "name": "4cdc3394-257f-4065-85d2-306afb66e117.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000043",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.364830+00:00"
+            },
+            {
+                "name": "mDiffFit_00000044",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000039",
+                    "mProject_00000041"
+                ],
+                "children": [
+                    "mConcatFit_00000049"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "ae0f1fba-8a4f-4c70-bca4-418b371d24e4.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "815acbdd-cb68-4acb-9f8e-5d8773597a68.fits",
+                        "sizeInBytes": 531
+                    },
+                    {
+                        "link": "input",
+                        "name": "93f3ded6-6a91-445a-9ad6-32314b9e8dc1.fits",
+                        "sizeInBytes": 455
+                    },
+                    {
+                        "link": "input",
+                        "name": "7302899e-d45b-4d37-8926-1645257c7a65.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000044",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.364984+00:00"
+            },
+            {
+                "name": "mDiffFit_00000045",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000039",
+                    "mProject_00000042"
+                ],
+                "children": [
+                    "mConcatFit_00000049"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "e8fab4ad-1a60-4336-a035-61b79119485b.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "815acbdd-cb68-4acb-9f8e-5d8773597a68.fits",
+                        "sizeInBytes": 531
+                    },
+                    {
+                        "link": "input",
+                        "name": "37a75ca8-e4f8-411f-8f7f-f08c1ab407fc.fits",
+                        "sizeInBytes": 533
+                    },
+                    {
+                        "link": "input",
+                        "name": "5e8ffb08-0583-4609-987c-e54a328d7acf.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000045",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.365124+00:00"
+            },
+            {
+                "name": "mDiffFit_00000046",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000040",
+                    "mProject_00000041"
+                ],
+                "children": [
+                    "mConcatFit_00000049"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "dc9c1954-d04e-4bcc-a2f1-7021520849fc.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f8851383-b5cb-4eb1-917d-befaafa98415.fits",
+                        "sizeInBytes": 577
+                    },
+                    {
+                        "link": "input",
+                        "name": "93f3ded6-6a91-445a-9ad6-32314b9e8dc1.fits",
+                        "sizeInBytes": 455
+                    },
+                    {
+                        "link": "input",
+                        "name": "9d788fcd-13c8-404f-aa47-a49cb9cd7678.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000046",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.365247+00:00"
+            },
+            {
+                "name": "mDiffFit_00000047",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000040",
+                    "mProject_00000042"
+                ],
+                "children": [
+                    "mConcatFit_00000049"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "e2391c29-8f77-425e-ac06-69a4b73058bf.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f8851383-b5cb-4eb1-917d-befaafa98415.fits",
+                        "sizeInBytes": 577
+                    },
+                    {
+                        "link": "input",
+                        "name": "37a75ca8-e4f8-411f-8f7f-f08c1ab407fc.fits",
+                        "sizeInBytes": 533
+                    },
+                    {
+                        "link": "input",
+                        "name": "15f8bbd4-6da2-4fc0-a625-d87825f55957.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000047",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.365368+00:00"
+            },
+            {
+                "name": "mDiffFit_00000048",
+                "type": "compute",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000041",
+                    "mProject_00000042"
+                ],
+                "children": [
+                    "mConcatFit_00000049"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "ac81db32-e46c-4d89-92ba-e3464b74e1f4.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "93f3ded6-6a91-445a-9ad6-32314b9e8dc1.fits",
+                        "sizeInBytes": 455
+                    },
+                    {
+                        "link": "input",
+                        "name": "37a75ca8-e4f8-411f-8f7f-f08c1ab407fc.fits",
+                        "sizeInBytes": 533
+                    },
+                    {
+                        "link": "input",
+                        "name": "149206c3-b065-470b-9274-d61aaef41276.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 4652500.0,
+                "cores": 1,
+                "id": "00000048",
+                "category": "mDiffFit",
+                "startedAt": "2024-05-07T13:00:16.365487+00:00"
+            },
+            {
+                "name": "mConcatFit_00000049",
+                "type": "compute",
+                "command": {
+                    "program": "mConcatFit",
+                    "arguments": []
+                },
+                "parents": [
+                    "mDiffFit_00000043",
+                    "mDiffFit_00000044",
+                    "mDiffFit_00000045",
+                    "mDiffFit_00000046",
+                    "mDiffFit_00000047",
+                    "mDiffFit_00000048"
+                ],
+                "children": [
+                    "mBgModel_00000050"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "342dcc6f-37e8-4033-88c9-661edfdff1e0.tbl",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "82cc2e13-97a9-4166-8d1e-8308489172c2.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "ae0f1fba-8a4f-4c70-bca4-418b371d24e4.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "e8fab4ad-1a60-4336-a035-61b79119485b.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "dc9c1954-d04e-4bcc-a2f1-7021520849fc.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "e2391c29-8f77-425e-ac06-69a4b73058bf.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "ac81db32-e46c-4d89-92ba-e3464b74e1f4.txt",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "a02c6b9e-d7a8-4390-adc8-ea22d1f45e54.tbl",
+                        "sizeInBytes": 2
+                    }
+                ],
+                "runtimeInSeconds": 171571.529,
+                "cores": 1,
+                "id": "00000049",
+                "category": "mConcatFit",
+                "startedAt": "2024-05-07T13:00:16.365742+00:00"
+            },
+            {
+                "name": "mBgModel_00000050",
+                "type": "compute",
+                "command": {
+                    "program": "mBgModel",
+                    "arguments": []
+                },
+                "parents": [
+                    "mConcatFit_00000049"
+                ],
+                "children": [
+                    "mBackground_00000051",
+                    "mBackground_00000052",
+                    "mBackground_00000053",
+                    "mBackground_00000054"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "c3a6872d-e330-4ea9-870b-279de34f9c7d.tbl",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "342dcc6f-37e8-4033-88c9-661edfdff1e0.tbl",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 1105290.0,
+                "cores": 1,
+                "id": "00000050",
+                "category": "mBgModel",
+                "startedAt": "2024-05-07T13:00:16.366011+00:00"
+            },
+            {
+                "name": "mBackground_00000051",
+                "type": "compute",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000039",
+                    "mBgModel_00000050"
+                ],
+                "children": [
+                    "mImgtbl_00000055",
+                    "mAdd_00000056"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "4a74ae79-a342-4cba-945d-c10f8fee2919.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "815acbdd-cb68-4acb-9f8e-5d8773597a68.fits",
+                        "sizeInBytes": 531
+                    },
+                    {
+                        "link": "input",
+                        "name": "c3a6872d-e330-4ea9-870b-279de34f9c7d.tbl",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 11410300.0,
+                "cores": 1,
+                "id": "00000051",
+                "category": "mBackground",
+                "startedAt": "2024-05-07T13:00:16.366153+00:00"
+            },
+            {
+                "name": "mBackground_00000052",
+                "type": "compute",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000040",
+                    "mBgModel_00000050"
+                ],
+                "children": [
+                    "mImgtbl_00000055",
+                    "mAdd_00000056"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "1182c5d2-9db6-467f-bae8-4178f6f460ee.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "f8851383-b5cb-4eb1-917d-befaafa98415.fits",
+                        "sizeInBytes": 577
+                    },
+                    {
+                        "link": "input",
+                        "name": "c3a6872d-e330-4ea9-870b-279de34f9c7d.tbl",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 11410300.0,
+                "cores": 1,
+                "id": "00000052",
+                "category": "mBackground",
+                "startedAt": "2024-05-07T13:00:16.366281+00:00"
+            },
+            {
+                "name": "mBackground_00000053",
+                "type": "compute",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000041",
+                    "mBgModel_00000050"
+                ],
+                "children": [
+                    "mImgtbl_00000055",
+                    "mAdd_00000056"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "9929d0c8-0aef-46a7-a11b-86c664165957.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "93f3ded6-6a91-445a-9ad6-32314b9e8dc1.fits",
+                        "sizeInBytes": 455
+                    },
+                    {
+                        "link": "input",
+                        "name": "c3a6872d-e330-4ea9-870b-279de34f9c7d.tbl",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 11410300.0,
+                "cores": 1,
+                "id": "00000053",
+                "category": "mBackground",
+                "startedAt": "2024-05-07T13:00:16.366407+00:00"
+            },
+            {
+                "name": "mBackground_00000054",
+                "type": "compute",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": []
+                },
+                "parents": [
+                    "mProject_00000042",
+                    "mBgModel_00000050"
+                ],
+                "children": [
+                    "mImgtbl_00000055",
+                    "mAdd_00000056"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "f159e94c-4708-4ddc-96c4-5fca62fa82f4.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "37a75ca8-e4f8-411f-8f7f-f08c1ab407fc.fits",
+                        "sizeInBytes": 533
+                    },
+                    {
+                        "link": "input",
+                        "name": "c3a6872d-e330-4ea9-870b-279de34f9c7d.tbl",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 11410300.0,
+                "cores": 1,
+                "id": "00000054",
+                "category": "mBackground",
+                "startedAt": "2024-05-07T13:00:16.366530+00:00"
+            },
+            {
+                "name": "mImgtbl_00000055",
+                "type": "compute",
+                "command": {
+                    "program": "mImgtbl",
+                    "arguments": []
+                },
+                "parents": [
+                    "mBackground_00000051",
+                    "mBackground_00000052",
+                    "mBackground_00000053",
+                    "mBackground_00000054"
+                ],
+                "children": [
+                    "mAdd_00000056"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "e1609070-2be3-4730-a4d5-aee8edb03d46.tbl",
+                        "sizeInBytes": 1
+                    },
+                    {
+                        "link": "input",
+                        "name": "4a74ae79-a342-4cba-945d-c10f8fee2919.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "1182c5d2-9db6-467f-bae8-4178f6f460ee.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "9929d0c8-0aef-46a7-a11b-86c664165957.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "f159e94c-4708-4ddc-96c4-5fca62fa82f4.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "4f601fd1-bd67-4ac5-88e4-203a82539b31.tbl",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 17620.0,
+                "cores": 1,
+                "id": "00000055",
+                "category": "mImgtbl",
+                "startedAt": "2024-05-07T13:00:16.366656+00:00"
+            },
+            {
+                "name": "mAdd_00000056",
+                "type": "compute",
+                "command": {
+                    "program": "mAdd",
+                    "arguments": []
+                },
+                "parents": [
+                    "mBackground_00000051",
+                    "mBackground_00000052",
+                    "mBackground_00000053",
+                    "mBackground_00000054",
+                    "mImgtbl_00000055"
+                ],
+                "children": [
+                    "mViewer_00000057",
+                    "mViewer_00000058"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "fa5cacef-b511-4b7d-af9a-6b244e8f994d.fits",
+                        "sizeInBytes": 4147
+                    },
+                    {
+                        "link": "input",
+                        "name": "4a74ae79-a342-4cba-945d-c10f8fee2919.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "1182c5d2-9db6-467f-bae8-4178f6f460ee.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "9929d0c8-0aef-46a7-a11b-86c664165957.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "f159e94c-4708-4ddc-96c4-5fca62fa82f4.fits",
+                        "sizeInBytes": 550
+                    },
+                    {
+                        "link": "input",
+                        "name": "e1609070-2be3-4730-a4d5-aee8edb03d46.tbl",
+                        "sizeInBytes": 1
+                    },
+                    {
+                        "link": "input",
+                        "name": "a90ae151-44cc-4c96-87f2-ce61ef0a868d.hdr",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 231620.0,
+                "cores": 1,
+                "id": "00000056",
+                "category": "mAdd",
+                "startedAt": "2024-05-07T13:00:16.366777+00:00"
+            },
+            {
+                "name": "mViewer_00000057",
+                "type": "compute",
+                "command": {
+                    "program": "mViewer",
+                    "arguments": []
+                },
+                "parents": [
+                    "mAdd_00000056"
+                ],
+                "children": [],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "3debc5ff-9915-4e2e-821e-afabe314cd73.jpg",
+                        "sizeInBytes": 101
+                    },
+                    {
+                        "link": "output",
+                        "name": "b02b5cea-3d3f-4492-bb78-9ec3400e4fce.png",
+                        "sizeInBytes": 26
+                    },
+                    {
+                        "link": "input",
+                        "name": "fa5cacef-b511-4b7d-af9a-6b244e8f994d.fits",
+                        "sizeInBytes": 4147
+                    }
+                ],
+                "runtimeInSeconds": 6836800.0,
+                "cores": 1,
+                "id": "00000057",
+                "category": "mViewer",
+                "startedAt": "2024-05-07T13:00:16.366921+00:00"
+            },
+            {
+                "name": "mViewer_00000058",
+                "type": "compute",
+                "command": {
+                    "program": "mViewer",
+                    "arguments": []
+                },
+                "parents": [
+                    "mAdd_00000018",
+                    "mAdd_00000037",
+                    "mAdd_00000056"
+                ],
+                "children": [],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "9d49004f-4642-4549-a1cb-e448ae9c99da.jpg",
+                        "sizeInBytes": 101
+                    },
+                    {
+                        "link": "output",
+                        "name": "42cd9bc5-7fc0-4902-8d5d-cc118e158372.png",
+                        "sizeInBytes": 26
+                    },
+                    {
+                        "link": "input",
+                        "name": "5584393a-025a-4126-9176-ed0801d2b733.fits",
+                        "sizeInBytes": 4147
+                    },
+                    {
+                        "link": "input",
+                        "name": "93074485-c7d7-446c-aa6b-f4162235d95e.fits",
+                        "sizeInBytes": 4147
+                    },
+                    {
+                        "link": "input",
+                        "name": "fa5cacef-b511-4b7d-af9a-6b244e8f994d.fits",
+                        "sizeInBytes": 4147
+                    }
+                ],
+                "runtimeInSeconds": 6836800.0,
+                "cores": 1,
+                "id": "00000058",
+                "category": "mViewer",
+                "startedAt": "2024-05-07T13:00:16.367059+00:00"
+            }
+        ]
+    }
+}

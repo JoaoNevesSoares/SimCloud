@@ -1,0 +1,110 @@
+{
+  "name": "Montage-synthetic-instance",
+  "description": "This is a workflow",
+  "createdAt": "2024-01-06T11:20:03.953522",
+  "schemaVersion": "1.3",
+  "author": {
+    "name": "root",
+    "email": "support@wfcommons.org"
+  },
+  "wms": {
+    "name":"WfCommons",
+    "version": "1.0",
+    "url": "https:/teste.com"
+  },
+  "workflow": {
+    "executedAt": "20240106T082003-0300",
+    "makespanInSeconds": 0,
+    "tasks": [
+      {
+        "name": "sG1IterDecon_00000001",
+        "type": "compute",
+        "command": {
+          "program": "sG1IterDecon",
+          "arguments": []
+        },
+        "parents": [],
+        "children": [
+          "sG1IterDecon_00000002"
+        ],
+        "runtimeInSeconds": 12610.481,
+        "files": [
+          {
+            "link": "output",
+            "name": "dc9f731c-cfc5-4ec4-9b0b-312e12284443.stf",
+            "sizeInBytes": 9773
+          },
+          {
+            "link": "input",
+            "name": "951048f9-c508-40a9-80e1-87bb96e8ce2c.lht",
+            "sizeInBytes": 1601
+          }
+        ],
+        "cores": 1,
+        "id": "00000001",
+        "category": "sG1terDecon",
+        "startedAt": "2024-04-23T16:35:08.189670+00:00"
+      },
+      {
+        "name": "sG1IterDecon_00000002",
+        "type": "compute",
+        "command": {
+          "program": "sG1IterDecon",
+          "arguments": []
+        },
+        "parents": [
+          "sG1IterDecon_00000001"
+        ],
+        "children": [
+          "sG1IterDecon_00000003"
+        ],
+        "runtimeInSeconds": 12630.481,
+        "files": [
+          {
+            "link": "output",
+            "name": "dc9f731c-cfc5-4ec4-9b0b-312e12284443.stf",
+            "sizeInBytes": 9773
+          },
+          {
+            "link": "input",
+            "name": "951048f9-c508-40a9-80e1-87bb96e8ce2c.lht",
+            "sizeInBytes": 1601
+          }
+        ],
+        "cores": 1,
+        "id": "00000001",
+        "category": "sG1terDecon",
+        "startedAt": "2024-04-23T16:35:08.189670+00:00"
+      },
+      {
+        "name": "sG1IterDecon_00000003",
+        "type": "compute",
+        "command": {
+          "program": "sG1IterDecon",
+          "arguments": []
+        },
+        "parents": [
+          "sG1IterDecon_00000002"
+        ],
+        "children": [],
+        "runtimeInSeconds": 12650.481,
+        "files": [
+          {
+            "link": "output",
+            "name": "dc9f731c-cfc5-4ec4-9b0b-312e12284443.stf",
+            "sizeInBytes": 9773
+          },
+          {
+            "link": "input",
+            "name": "951048f9-c508-40a9-80e1-87bb96e8ce2c.lht",
+            "sizeInBytes": 1601
+          }
+        ],
+        "cores": 1,
+        "id": "00000001",
+        "category": "sG1terDecon",
+        "startedAt": "2024-04-23T16:35:08.189670+00:00"
+      }
+    ]
+  }
+}
