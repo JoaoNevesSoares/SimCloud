@@ -16,7 +16,16 @@ import java.util.List;
 public class BrokerManagerSimple {
     private static long VM_ID = 100;
     public static final Vm vmTemplate = PlatformUtils.loadVmTemplate("src/main/resources/vm-m5xlarge.yaml");
+    private String workflowFileName;
     public List<DatacenterBrokerSimple> brokers = new ArrayList<>();
+
+    public String getWorkflowFileName() {
+        return workflowFileName;
+    }
+
+    public void setWorkflowFileName(String workflowFileName) {
+        this.workflowFileName = workflowFileName;
+    }
 
     public void newBrokerRequest(CloudSimPlus sim, List<DatacenterSimple> datacenters, long vmRequestAmount) {
         DatacenterBrokerWorstFit broker = new DatacenterBrokerWorstFit(sim);
@@ -26,7 +35,7 @@ public class BrokerManagerSimple {
             VmSimpleSetMips vm = createVmForBroker(broker,datacenters);
             broker.submitVm(vm);
         }
-        var workflow = DagUtils.loadWorkflow("src/main/resources/montage-400.json");
+        var workflow = DagUtils.loadWorkflow(getWorkflowFileName());
         submitWorkflow(broker,workflow);
     }
     private static VmSimpleSetMips createVmForBroker(DatacenterBrokerSimple broker,List<DatacenterSimple> datacenters) {

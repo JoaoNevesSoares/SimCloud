@@ -34,6 +34,11 @@ public class SimulationManagerSimple {
         return datacenters;
     }
     private SimulationScheduler simulationScheduler;
+
+    public BrokerManagerSimple getBrokerManager() {
+        return brokerManager;
+    }
+
     protected BrokerManagerSimple brokerManager;
     private static final int VMS_AMOUNT = 4;
     private final String directoryPrefix;
