@@ -14,6 +14,16 @@ import java.util.List;
 
 public class SimulationManagerSimple {
     protected final CloudSimPlus sim = new CloudSimPlus();
+
+    public String getPlatformFileName() {
+        return platformFileName;
+    }
+
+    public void setPlatformFileName(String platformFileName) {
+        this.platformFileName = platformFileName;
+    }
+
+    protected String platformFileName;
     private List<DatacenterSimple> datacenters;
     protected SimulationLogger simLog;
 
@@ -33,7 +43,8 @@ public class SimulationManagerSimple {
     }
     public void simulate() {
         Log.setLevel(Level.INFO);
-        setupDatacenters();
+        var platformFileName = getPlatformFileName();
+        setupDatacenters(platformFileName);
         setupLogger();
         this.brokerManager = new BrokerManagerSimple();
         brokerManager.newBrokerRequest(sim, datacenters, VMS_AMOUNT);
@@ -43,9 +54,9 @@ public class SimulationManagerSimple {
         sim.start();
         displayStatistics();
     }
-    protected void setupDatacenters() {
+    protected void setupDatacenters(String fileName) {
         PlatformUtils.init(sim);
-        datacenters = PlatformUtils.loadPlatform("src/main/resources/low-platform.yaml");
+        datacenters = PlatformUtils.loadPlatform(fileName);
         for (DatacenterSimple datacenter : datacenters) {
             datacenter.setVmAllocationPolicy(new VmAllocationPolicyWorstFit());
         }

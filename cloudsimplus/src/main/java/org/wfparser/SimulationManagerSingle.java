@@ -12,7 +12,8 @@ public class SimulationManagerSingle extends SimulationManagerSimple {
     @Override
     public void simulate() {
         Log.setLevel(Level.INFO);
-        setupDatacenters();
+        var platformFileName = getPlatformFileName();
+        setupDatacenters(platformFileName);
         setupLogger();
         setupSimulationScheduler();
         this.brokerManager = new BrokerManagerSimple();
