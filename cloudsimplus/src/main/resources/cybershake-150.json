@@ -1,0 +1,5199 @@
+{
+    "name": "Seismology-synthetic-instance",
+    "description": "Instance generated with WfCommons - https://wfcommons.org",
+    "createdAt": "2024-06-09T21:11:04.838288+00:00",
+    "schemaVersion": "1.4",
+    "author": {
+        "name": "root",
+        "email": "support@wfcommons.org"
+    },
+    "wms": {
+        "name": "WfCommons",
+        "version": "1.0",
+        "url": "https://docs.wfcommons.org/en/v1.0/"
+    },
+    "workflow": {
+        "executedAt": "2024-06-09T21:11:04.838327+00:00",
+        "makespanInSeconds": 0,
+        "tasks": [
+            {
+                "name": "sG1IterDecon_00000001",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "351acb66-a500-4a4e-9b01-c7a46987bf53.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "eb37f734-d36a-42e2-895e-b65c2a83fcd5.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000001",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.853022+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000002",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "46355b30-49b9-4964-9556-e77c1f37c3bc.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "3e06190e-93b7-4669-b24f-2ebdb85cbff9.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 161.09,
+                "cores": 1,
+                "id": "00000002",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.853331+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000003",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "58259e55-bfe6-4be0-b0b6-b0613f9f3547.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "b0fa8c22-fecf-4802-a035-350ac04c844c.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000003",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.853548+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000004",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "1967bb9f-0c5a-4b75-aec2-acf0fccf5e3f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "cb0573a5-4039-4b20-9b8c-44186db77bcb.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000004",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.853801+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000005",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "dc593fb1-fae5-42da-8ed8-43207742372a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "0e5369c9-a320-43e7-9834-2a73a4539543.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000005",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.854013+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000006",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "cad2e2d4-61e9-4c39-87f0-3051dbc0ff22.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8e7699b4-12e0-4bba-afeb-9e760ccd1c09.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 493.495,
+                "cores": 1,
+                "id": "00000006",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.854216+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000007",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "b7b9eeb8-471a-480c-9400-128df72237a8.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "06d1533a-c5b2-47f0-bd46-bc20c9c01784.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 177.192,
+                "cores": 1,
+                "id": "00000007",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.854432+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000008",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "e15780ce-1509-4b9a-bb44-733647e4a399.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "59fc304e-4f08-474e-9562-7e0ca9c5337c.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 174.868,
+                "cores": 1,
+                "id": "00000008",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.854649+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000009",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "73b2e00c-ae38-4b40-a43c-fe7698b4632c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "b89fa3c8-176b-4c7c-9cb9-eb3a4af34d69.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 321.587,
+                "cores": 1,
+                "id": "00000009",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.854873+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000010",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "2089c8f3-615b-4db9-bd97-e730a1d86f31.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "2153a409-8b7f-40a7-8511-6cb3d8db9b22.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000010",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.855140+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000011",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "b23dffdb-3b09-4e78-b635-b26e12227e66.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "707c6627-5b3b-4a13-8838-286db707876e.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 134.075,
+                "cores": 1,
+                "id": "00000011",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.855700+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000012",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "6290eb75-4493-44aa-8f8b-1f3bfd6d08da.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "d22796fe-2891-49f9-a806-02a38bc5d244.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000012",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.855989+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000013",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "d01beb28-ce6e-4258-9137-a15b8fb45b55.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "515ed4cb-19de-4c6a-9275-a3caad2c8cb1.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000013",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.856266+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000014",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "9a5393bc-a430-4bad-8498-d8bdce6c885b.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c92961e8-0654-4fda-8a6e-b81fe8588a90.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 261.043,
+                "cores": 1,
+                "id": "00000014",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.856540+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000015",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "cf26140c-1278-4ff6-9065-8858e5c31347.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "b04231a9-32a3-4fee-bb5b-eb75abf4126c.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 182.78,
+                "cores": 1,
+                "id": "00000015",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.857251+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000016",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "df12bbf8-239c-4fc3-bbff-eb09b4306f24.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "28c13b9c-19ff-4ac2-8458-1e2e29c9f078.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 244.283,
+                "cores": 1,
+                "id": "00000016",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.857577+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000017",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "ff970c27-50b0-48e3-93c5-951383bdeb66.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f6946623-322d-40b6-b60b-2be5f32c6ac6.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000017",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.858135+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000018",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "f77f8892-a8cb-4073-8555-a824b3290e2b.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "1ae0fe0b-1339-42fa-a2d0-8d5e8871190d.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000018",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.858433+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000019",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "386f8199-82df-41e0-9ecf-46a6c7125696.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "7e5144c9-d4ec-498f-81ff-aceb12e9319f.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 201.202,
+                "cores": 1,
+                "id": "00000019",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.858716+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000020",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "53c50539-28fd-4fda-8ffc-698e5d9e1641.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "389873ac-5a6d-4c42-a737-a0b11acb6873.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 376.55,
+                "cores": 1,
+                "id": "00000020",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.859004+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000021",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "b1a6321e-9528-49ca-9836-80da3b724e47.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8c8a73cb-5b80-4e12-b0cb-ef9c3da13ec6.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000021",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.859318+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000022",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "38fca215-0a32-4631-80e6-5cfef3ba6e8c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "9e103611-74fe-4f99-a979-109407f3bdc8.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000022",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.859602+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000023",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "6d376597-d935-446d-9d4b-3769637e7639.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "e8f54f79-6c7f-4603-bcae-9a20a5d406ac.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000023",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.859938+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000024",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "37671e0b-1023-4c6a-a2b0-144db6ae048d.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "7496cbf3-0aaf-4813-ab61-462978354b67.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 182.645,
+                "cores": 1,
+                "id": "00000024",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.860201+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000025",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "2bb6bd07-035f-4256-b4ce-3caff5f3b38f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "78354e93-a2d4-4c58-9d54-39bb460cc00c.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000025",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.860468+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000026",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "a9109d48-d6de-4cb6-95eb-df39b22f7f3a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "76a82f98-7854-4f03-9e93-ea7ef4359b10.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000026",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.861085+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000027",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "b05a9a65-53ef-45f9-8105-9446c4e44851.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "ee618fdd-d9f9-4bbe-b2c0-03b7c0a9bdc3.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000027",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.861394+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000028",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "0f95e293-f40a-44f0-8d04-067b8e2bcecb.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "b8e2a442-7604-4467-9028-ba8c15244811.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 424.864,
+                "cores": 1,
+                "id": "00000028",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.863058+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000029",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "a612cd2e-8382-4c16-a3d1-a15609fbdfa5.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "92d6bb4d-35fe-4600-a4dd-911e951ed936.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000029",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.863388+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000030",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "93f710d4-25fc-4fce-93cf-9a6d185f575c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "9c9f2c8e-648e-423f-8367-e48d23bf1bc1.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 453.631,
+                "cores": 1,
+                "id": "00000030",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.863617+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000031",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "e2c547b5-590b-4b72-b953-92e712e55bec.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "edf9a3cf-b707-4162-9c3a-6ae12fe321e1.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000031",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.863846+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000032",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "00b15921-652d-4355-9160-28439720102c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "181f71a1-f8a8-4d6d-8501-7915598910e0.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 253.192,
+                "cores": 1,
+                "id": "00000032",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.864005+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000033",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "4aa60d73-a13b-4bcf-b2f2-e3ca518ca269.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "6543a71c-d216-4975-8770-6ea0027e5a23.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000033",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.864166+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000034",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "386a588a-cc57-4db1-a5b4-2e2dac014602.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "67485b68-d2ef-40a6-af83-3f949e3bb32a.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000034",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.864314+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000035",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "3000eb44-4c50-4fe4-a849-cd3fee7928c2.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "1b7f15d3-3851-4faa-9417-75a7c8351c59.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000035",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.864458+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000036",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "04bd8bf4-5865-4952-b744-65ceccf0923a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "00c5e126-2391-469f-912f-d3577a26dc91.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 365.593,
+                "cores": 1,
+                "id": "00000036",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.864612+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000037",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "c81f7974-a4f3-4921-a683-fdcec227401a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "21247f5c-a812-496a-b005-7f2f1e0d7b32.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000037",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.864778+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000038",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "7c723938-48f4-439c-917c-0c64971dc73d.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f02dc4ee-dca4-41c0-bc94-6038f52a4940.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000038",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.864921+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000039",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "5cd9e895-6533-439f-b784-bf61c6db72b3.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "31373fca-84c4-41c1-9445-6b568e8e7abb.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 206.75,
+                "cores": 1,
+                "id": "00000039",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.865168+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000040",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "d1de8d10-a783-4bd1-8903-e964dacb3755.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "d48eef50-6d9e-4b51-8083-e4e29aa9597c.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000040",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.865322+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000041",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "96155f2e-f875-45a9-80e6-9f1f02ed379f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "96fa99d7-6c2d-48a9-8599-3392ff89a4bf.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 60.993,
+                "cores": 1,
+                "id": "00000041",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.865480+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000042",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "70fd38a2-79f4-45bf-901a-85906548cc8d.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c8b07a1e-d654-4fd9-bab8-93c7c4252911.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 341.823,
+                "cores": 1,
+                "id": "00000042",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.865749+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000043",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "7d41f144-562b-46f1-917c-85f5dee586c0.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "546afd08-54c6-4f40-b7cc-9104de1a5c27.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 298.006,
+                "cores": 1,
+                "id": "00000043",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.866018+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000044",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "1b9a529e-1cf7-4945-928f-b2860951ce40.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "39130611-9b9b-460b-9a5a-8294a37c6d85.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 222.844,
+                "cores": 1,
+                "id": "00000044",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.866282+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000045",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "1d922160-c4b0-4cb7-9947-466ca4c3f6bc.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8d4e4abd-b095-484a-9982-46defca9b662.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 114.941,
+                "cores": 1,
+                "id": "00000045",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.866553+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000046",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "a8cdd42c-d296-48e8-9b66-2ef0c3a2c133.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "4726d23e-e70d-4647-b303-524b021c7c1e.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000046",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.866838+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000047",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "d4d0ac9e-2b30-4ed5-95fe-e5941e447bff.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "e97b9055-b9ee-464e-a375-2502f7dbf77f.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 361.139,
+                "cores": 1,
+                "id": "00000047",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.867133+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000048",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "a9b58e1c-5241-4f62-8a16-9aef2a77cc7b.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "a5306857-b006-429c-a7da-ac6be8df2c01.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 204.289,
+                "cores": 1,
+                "id": "00000048",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.867426+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000049",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "5b0674d1-d517-4455-a3f8-60554ed8600e.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "9be49b7a-3657-408c-b3a2-05eb3ed3b16d.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 495.664,
+                "cores": 1,
+                "id": "00000049",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.867735+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000050",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "a2ff1295-950e-4443-95ac-9e76b38c0d6d.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "ae89570b-9696-4da9-8772-a4154c307bb8.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 88.185,
+                "cores": 1,
+                "id": "00000050",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.868006+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000051",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "2f3c2ddc-5bc1-42cb-a2d6-1021467339c7.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "78a3944e-ea97-4e53-8e50-c01a35284e63.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000051",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.868311+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000052",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "f2997bef-589f-48cb-aa95-e36ac1bd2c1a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "13384aff-109c-4268-b27d-809c1f67cd15.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000052",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.868598+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000053",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "df58b932-d91a-4296-8391-ea7c5d2a45aa.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "176243bf-63cf-41eb-87b0-e11f99a413ca.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 172.512,
+                "cores": 1,
+                "id": "00000053",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.868910+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000054",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "47b249c0-d94e-45ee-a7db-f3d4c04567ae.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f8f09211-d3aa-459f-adf4-c9c7c29497e5.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000054",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.869180+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000055",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "548b30fa-b255-4f9e-bbe6-a6b0e57bedf8.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "bb8b2041-bcb3-4a11-95d2-f10242f495b2.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 387.874,
+                "cores": 1,
+                "id": "00000055",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.869445+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000056",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "712bc0df-01ef-4c76-b678-e0c6b6fdbb37.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "659e7671-c632-4a38-a51f-33b3bc448fbb.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000056",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.869782+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000057",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "db3280ab-7852-462b-9ef9-27c7fe0c266a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "2764402b-9df2-48e7-b92b-99d81bc0907f.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 85.23,
+                "cores": 1,
+                "id": "00000057",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.870064+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000058",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "56a79ff8-3040-4648-961f-e4dedd811161.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "d8980651-3f2f-4017-a037-0e73f244cbc8.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 306.885,
+                "cores": 1,
+                "id": "00000058",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.870328+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000059",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "666b08e0-3d49-4c53-b122-f4f85d63c476.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "13a6da5b-b2df-4cc3-9a2c-7cb72dff9551.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 324.994,
+                "cores": 1,
+                "id": "00000059",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.870563+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000060",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "6fa15881-f1f2-4b7a-9fc9-28c61ddf0f23.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "5daf15af-ab46-4336-af00-6327414eceac.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000060",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.870784+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000061",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "0d9c0b3d-d7a0-456c-842b-7f14aec90a0f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "9cb8fecd-f769-44d0-90d6-b9dbc85c093a.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 317.168,
+                "cores": 1,
+                "id": "00000061",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.870951+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000062",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "4f42e8b8-08c6-4c3e-8035-9a1ef84f0cd3.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "780dac1c-f607-46d3-bbd4-d64c4ff4fdfb.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 545.688,
+                "cores": 1,
+                "id": "00000062",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.871098+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000063",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "e1f5a577-0921-4719-b154-bc0cc9934367.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "37d7fce5-fcff-466c-99a8-be6795c7ec09.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 182.207,
+                "cores": 1,
+                "id": "00000063",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.871240+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000064",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "412ef681-abf7-4e44-b4ee-3da5e1106e38.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "18fb50d5-858f-4944-861b-5b36004cab61.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 127.325,
+                "cores": 1,
+                "id": "00000064",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.871400+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000065",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "9e7459c4-5c6e-47ca-98b9-3d0ac250a329.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "2c414118-fb79-4553-a2ad-0692bca7660d.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 430.571,
+                "cores": 1,
+                "id": "00000065",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.871581+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000066",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "350e5b3c-b45e-4a54-b390-ac6067d581e7.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "43fb04e9-9c21-4b8b-b155-cd00a9c273e7.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 502.022,
+                "cores": 1,
+                "id": "00000066",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.871784+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000067",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "9f1c7b36-2afa-45cc-8690-17d5f65df54f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "73acc55c-ad77-46f6-a411-522014176bd1.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 488.85,
+                "cores": 1,
+                "id": "00000067",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.871941+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000068",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "393b4709-0111-400b-8bff-4a18b10a6f58.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "d277bd97-0367-458d-a0b8-e44ccd6a568f.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 185.358,
+                "cores": 1,
+                "id": "00000068",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.872083+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000069",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "3d5c7126-d8c1-432a-8231-48021a8ce5d2.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "96b69f28-2bba-4dc3-a30d-0070e07c6bae.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 279.817,
+                "cores": 1,
+                "id": "00000069",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.872278+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000070",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "a7adefaf-e36f-4cec-acc6-c2e079f31e7d.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "dd651dc2-576e-4df9-abeb-06ff974be5ec.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 171.471,
+                "cores": 1,
+                "id": "00000070",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.872441+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000071",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "5e217cbb-d224-4454-962a-f2ac65f23e26.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "763e2ba5-6a01-493b-a017-991e90fff021.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 284.217,
+                "cores": 1,
+                "id": "00000071",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.872594+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000072",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "6e7b5965-3772-485e-ac20-156e00ff2cf1.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "1b731b95-d150-46c4-a5a0-fb651bef38a6.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000072",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.872796+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000073",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "31b9b214-12a6-46cd-9d45-64ca836c6bb3.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "a352615b-5a9e-4ce2-9626-7783d44f3d76.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 98.307,
+                "cores": 1,
+                "id": "00000073",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.872950+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000074",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "c84c53fa-3705-4f8e-9599-c8722243f115.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c87bc663-3397-4ada-be06-cca13586da2d.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 306.082,
+                "cores": 1,
+                "id": "00000074",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.873092+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000075",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "c595a109-76fd-4985-942d-5aaa51a7bab7.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8a1f064b-50c5-4cad-8c44-287b099f2ef7.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 250.348,
+                "cores": 1,
+                "id": "00000075",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.873230+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000076",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "5a4cec14-d2c3-454c-8a45-505d0db48dc1.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f4d96cd1-7f30-4017-9a0a-dd8cd62a0bd2.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 400.961,
+                "cores": 1,
+                "id": "00000076",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.873374+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000077",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "d897b61f-0129-452a-afef-4148932500ec.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8d410c8a-7de1-4f67-ad68-71c33be3e475.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 268.5,
+                "cores": 1,
+                "id": "00000077",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.873523+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000078",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "81bc08fc-5d34-4469-9c39-cef65d1f3630.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "d545d268-9494-41fd-935f-b3a8ea3ce623.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 357.705,
+                "cores": 1,
+                "id": "00000078",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.873716+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000079",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "cb68b906-7978-4ece-bc83-9d44bf64455f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "43d5a2ca-a0f6-4c11-993c-9a23675b3ce2.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 124.013,
+                "cores": 1,
+                "id": "00000079",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.873882+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000080",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "013c92c0-b9f5-43f9-a2df-bfbf0ba94d9f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8561a757-0213-4bf7-8800-c015a7744e26.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 184.041,
+                "cores": 1,
+                "id": "00000080",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.874022+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000081",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "f30e8d28-160f-4498-a78f-98beeeebf456.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "e643774a-dc1b-4eca-a5a9-359e8cda75c8.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 280.024,
+                "cores": 1,
+                "id": "00000081",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.874159+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000082",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "083727cd-57be-4cb5-882f-48a6480ce6f2.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "bf68a890-5960-4576-9aff-4b983a6dc122.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 282.323,
+                "cores": 1,
+                "id": "00000082",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.874299+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000083",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "e77f85e7-68e5-4dc6-9bbf-0728c0f98843.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "80a09391-bb0e-48ae-ae8c-00989aa83b6c.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 73.069,
+                "cores": 1,
+                "id": "00000083",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.874437+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000084",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "6e6c1e06-3281-473f-82cf-4f2d1e70edbd.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "2e05b368-7941-4208-9b42-6557b69a332c.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000084",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.874584+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000085",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "dbb9a784-234e-4f0e-acd7-5aa60c7958f5.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "2bd87e0a-b0ea-4f00-a405-a03de94ce39b.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 103.782,
+                "cores": 1,
+                "id": "00000085",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.874785+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000086",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "fd993159-d70d-4949-af4c-1e3ad8a03206.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f5149a97-e716-435a-8af5-e269af6daeac.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000086",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.874942+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000087",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "aee4a630-75c1-4adb-9b39-b83286c09966.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "59595bc3-b93e-4ad8-bc93-4d519194ea45.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 126.83,
+                "cores": 1,
+                "id": "00000087",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.875102+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000088",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "1e501c9d-b10b-4587-9fb9-de2d21954bb8.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "689ba9ec-6787-486a-b09c-c523410e0a24.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 276.439,
+                "cores": 1,
+                "id": "00000088",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.875240+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000089",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "3896c281-fec9-48f2-84f2-6f449228dd0c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "3fa064e2-3f52-49f8-a940-0a6f3ea217a9.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 223.614,
+                "cores": 1,
+                "id": "00000089",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.875379+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000090",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "a04c2732-9a5d-4bcf-840c-fdb1013ceba5.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "20ca7a69-d9b7-48e1-99d1-072f44e1d89b.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 82.189,
+                "cores": 1,
+                "id": "00000090",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.875526+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000091",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "8a45fb05-993c-4bbd-b595-86c607d696b4.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "ea503050-5e59-49ea-a8ab-26db35568892.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 281.637,
+                "cores": 1,
+                "id": "00000091",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.875708+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000092",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "974bc4e8-a3ba-4812-b981-4cb3c8827943.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "b3dab21d-f7be-45bc-803b-b69887222ffe.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.219,
+                "cores": 1,
+                "id": "00000092",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.875871+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000093",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "233c6d11-e027-4393-97c2-ab618bf86f9f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "988c80ae-9696-4c6d-b59a-fdbc1ab3edfa.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 222.281,
+                "cores": 1,
+                "id": "00000093",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.876010+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000094",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "8704bae1-c4f7-4c6e-9519-3ab56d9b807e.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "d326851d-df5e-431f-8ab8-f8bcce34fc46.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000094",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.876147+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000095",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "e3d9a194-c62a-4794-9bd0-94603a967e17.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "21a526e9-d928-41f9-9646-bf5b082ea0a1.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 338.839,
+                "cores": 1,
+                "id": "00000095",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.876286+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000096",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "0e42ef4f-46f8-4e16-9617-1a6dde477569.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "010b9223-0346-416a-a844-169f61e2df13.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 112.981,
+                "cores": 1,
+                "id": "00000096",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.876425+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000097",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "97609a3a-c1b8-4ffb-bc6d-e0f3dd729b5a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "7c5bec85-bcf2-493f-8919-3de536bd6c0e.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000097",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.876574+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000098",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "b7728fa0-633d-460b-80ec-39a02ca5d897.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "5340137c-0ef2-4891-b4b4-aa63e5424b32.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 128.601,
+                "cores": 1,
+                "id": "00000098",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.876771+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000099",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "d0a56668-d58b-4c5a-abde-bf2ae5d55db1.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "6b34e35c-ce81-477d-91a8-cde54dce0c43.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000099",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.876923+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000100",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "062b703a-bb2f-4afd-8585-72558bd99bca.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "b65a2efd-ba7d-4891-9dbe-1b5865333680.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 307.606,
+                "cores": 1,
+                "id": "00000100",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.877062+00:00"
+            },
+            {
+                "name": "wrapper_siftSTFByMisfit_00000101",
+                "type": "compute",
+                "command": {
+                    "program": "wrapper_siftSTFByMisfit",
+                    "arguments": []
+                },
+                "parents": [
+                    "sG1IterDecon_00000001",
+                    "sG1IterDecon_00000002",
+                    "sG1IterDecon_00000003",
+                    "sG1IterDecon_00000004",
+                    "sG1IterDecon_00000005",
+                    "sG1IterDecon_00000006",
+                    "sG1IterDecon_00000007",
+                    "sG1IterDecon_00000008",
+                    "sG1IterDecon_00000009",
+                    "sG1IterDecon_00000010",
+                    "sG1IterDecon_00000011",
+                    "sG1IterDecon_00000012",
+                    "sG1IterDecon_00000013",
+                    "sG1IterDecon_00000014",
+                    "sG1IterDecon_00000015",
+                    "sG1IterDecon_00000016",
+                    "sG1IterDecon_00000017",
+                    "sG1IterDecon_00000018",
+                    "sG1IterDecon_00000019",
+                    "sG1IterDecon_00000020",
+                    "sG1IterDecon_00000021",
+                    "sG1IterDecon_00000022",
+                    "sG1IterDecon_00000023",
+                    "sG1IterDecon_00000024",
+                    "sG1IterDecon_00000025",
+                    "sG1IterDecon_00000026",
+                    "sG1IterDecon_00000027",
+                    "sG1IterDecon_00000028",
+                    "sG1IterDecon_00000029",
+                    "sG1IterDecon_00000030",
+                    "sG1IterDecon_00000031",
+                    "sG1IterDecon_00000032",
+                    "sG1IterDecon_00000033",
+                    "sG1IterDecon_00000034",
+                    "sG1IterDecon_00000035",
+                    "sG1IterDecon_00000036",
+                    "sG1IterDecon_00000037",
+                    "sG1IterDecon_00000038",
+                    "sG1IterDecon_00000039",
+                    "sG1IterDecon_00000040",
+                    "sG1IterDecon_00000041",
+                    "sG1IterDecon_00000042",
+                    "sG1IterDecon_00000043",
+                    "sG1IterDecon_00000044",
+                    "sG1IterDecon_00000045",
+                    "sG1IterDecon_00000046",
+                    "sG1IterDecon_00000047",
+                    "sG1IterDecon_00000048",
+                    "sG1IterDecon_00000049",
+                    "sG1IterDecon_00000050",
+                    "sG1IterDecon_00000051",
+                    "sG1IterDecon_00000052",
+                    "sG1IterDecon_00000053",
+                    "sG1IterDecon_00000054",
+                    "sG1IterDecon_00000055",
+                    "sG1IterDecon_00000056",
+                    "sG1IterDecon_00000057",
+                    "sG1IterDecon_00000058",
+                    "sG1IterDecon_00000059",
+                    "sG1IterDecon_00000060",
+                    "sG1IterDecon_00000061",
+                    "sG1IterDecon_00000062",
+                    "sG1IterDecon_00000063",
+                    "sG1IterDecon_00000064",
+                    "sG1IterDecon_00000065",
+                    "sG1IterDecon_00000066",
+                    "sG1IterDecon_00000067",
+                    "sG1IterDecon_00000068",
+                    "sG1IterDecon_00000069",
+                    "sG1IterDecon_00000070",
+                    "sG1IterDecon_00000071",
+                    "sG1IterDecon_00000072",
+                    "sG1IterDecon_00000073",
+                    "sG1IterDecon_00000074",
+                    "sG1IterDecon_00000075",
+                    "sG1IterDecon_00000076",
+                    "sG1IterDecon_00000077",
+                    "sG1IterDecon_00000078",
+                    "sG1IterDecon_00000079",
+                    "sG1IterDecon_00000080",
+                    "sG1IterDecon_00000081",
+                    "sG1IterDecon_00000082",
+                    "sG1IterDecon_00000083",
+                    "sG1IterDecon_00000084",
+                    "sG1IterDecon_00000085",
+                    "sG1IterDecon_00000086",
+                    "sG1IterDecon_00000087",
+                    "sG1IterDecon_00000088",
+                    "sG1IterDecon_00000089",
+                    "sG1IterDecon_00000090",
+                    "sG1IterDecon_00000091",
+                    "sG1IterDecon_00000092",
+                    "sG1IterDecon_00000093",
+                    "sG1IterDecon_00000094",
+                    "sG1IterDecon_00000095",
+                    "sG1IterDecon_00000096",
+                    "sG1IterDecon_00000097",
+                    "sG1IterDecon_00000098",
+                    "sG1IterDecon_00000099",
+                    "sG1IterDecon_00000100",
+                    "sG1IterDecon_00000102",
+                    "sG1IterDecon_00000103",
+                    "sG1IterDecon_00000104",
+                    "sG1IterDecon_00000105",
+                    "sG1IterDecon_00000106",
+                    "sG1IterDecon_00000107",
+                    "sG1IterDecon_00000108",
+                    "sG1IterDecon_00000109",
+                    "sG1IterDecon_00000110",
+                    "sG1IterDecon_00000111",
+                    "sG1IterDecon_00000112",
+                    "sG1IterDecon_00000113",
+                    "sG1IterDecon_00000114",
+                    "sG1IterDecon_00000115",
+                    "sG1IterDecon_00000116",
+                    "sG1IterDecon_00000117",
+                    "sG1IterDecon_00000118",
+                    "sG1IterDecon_00000119",
+                    "sG1IterDecon_00000120",
+                    "sG1IterDecon_00000121",
+                    "sG1IterDecon_00000122",
+                    "sG1IterDecon_00000123",
+                    "sG1IterDecon_00000124",
+                    "sG1IterDecon_00000125",
+                    "sG1IterDecon_00000126",
+                    "sG1IterDecon_00000127",
+                    "sG1IterDecon_00000128",
+                    "sG1IterDecon_00000129",
+                    "sG1IterDecon_00000130",
+                    "sG1IterDecon_00000131",
+                    "sG1IterDecon_00000132",
+                    "sG1IterDecon_00000133",
+                    "sG1IterDecon_00000134",
+                    "sG1IterDecon_00000135",
+                    "sG1IterDecon_00000136",
+                    "sG1IterDecon_00000137",
+                    "sG1IterDecon_00000138",
+                    "sG1IterDecon_00000139",
+                    "sG1IterDecon_00000140",
+                    "sG1IterDecon_00000141",
+                    "sG1IterDecon_00000142",
+                    "sG1IterDecon_00000143",
+                    "sG1IterDecon_00000144",
+                    "sG1IterDecon_00000145",
+                    "sG1IterDecon_00000146",
+                    "sG1IterDecon_00000147",
+                    "sG1IterDecon_00000148"
+                ],
+                "children": [],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "b25f2999-6249-4795-86eb-5e5368b6a97a.gz",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "351acb66-a500-4a4e-9b01-c7a46987bf53.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "46355b30-49b9-4964-9556-e77c1f37c3bc.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "58259e55-bfe6-4be0-b0b6-b0613f9f3547.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "1967bb9f-0c5a-4b75-aec2-acf0fccf5e3f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "dc593fb1-fae5-42da-8ed8-43207742372a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "cad2e2d4-61e9-4c39-87f0-3051dbc0ff22.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "b7b9eeb8-471a-480c-9400-128df72237a8.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "e15780ce-1509-4b9a-bb44-733647e4a399.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "73b2e00c-ae38-4b40-a43c-fe7698b4632c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "2089c8f3-615b-4db9-bd97-e730a1d86f31.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "b23dffdb-3b09-4e78-b635-b26e12227e66.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "6290eb75-4493-44aa-8f8b-1f3bfd6d08da.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "d01beb28-ce6e-4258-9137-a15b8fb45b55.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "9a5393bc-a430-4bad-8498-d8bdce6c885b.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "cf26140c-1278-4ff6-9065-8858e5c31347.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "df12bbf8-239c-4fc3-bbff-eb09b4306f24.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "ff970c27-50b0-48e3-93c5-951383bdeb66.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f77f8892-a8cb-4073-8555-a824b3290e2b.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "386f8199-82df-41e0-9ecf-46a6c7125696.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "53c50539-28fd-4fda-8ffc-698e5d9e1641.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "b1a6321e-9528-49ca-9836-80da3b724e47.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "38fca215-0a32-4631-80e6-5cfef3ba6e8c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "6d376597-d935-446d-9d4b-3769637e7639.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "37671e0b-1023-4c6a-a2b0-144db6ae048d.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "2bb6bd07-035f-4256-b4ce-3caff5f3b38f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "a9109d48-d6de-4cb6-95eb-df39b22f7f3a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "b05a9a65-53ef-45f9-8105-9446c4e44851.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "0f95e293-f40a-44f0-8d04-067b8e2bcecb.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "a612cd2e-8382-4c16-a3d1-a15609fbdfa5.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "93f710d4-25fc-4fce-93cf-9a6d185f575c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "e2c547b5-590b-4b72-b953-92e712e55bec.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "00b15921-652d-4355-9160-28439720102c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "4aa60d73-a13b-4bcf-b2f2-e3ca518ca269.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "386a588a-cc57-4db1-a5b4-2e2dac014602.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "3000eb44-4c50-4fe4-a849-cd3fee7928c2.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "04bd8bf4-5865-4952-b744-65ceccf0923a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c81f7974-a4f3-4921-a683-fdcec227401a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "7c723938-48f4-439c-917c-0c64971dc73d.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "5cd9e895-6533-439f-b784-bf61c6db72b3.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "d1de8d10-a783-4bd1-8903-e964dacb3755.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "96155f2e-f875-45a9-80e6-9f1f02ed379f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "70fd38a2-79f4-45bf-901a-85906548cc8d.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "7d41f144-562b-46f1-917c-85f5dee586c0.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "1b9a529e-1cf7-4945-928f-b2860951ce40.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "1d922160-c4b0-4cb7-9947-466ca4c3f6bc.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "a8cdd42c-d296-48e8-9b66-2ef0c3a2c133.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "d4d0ac9e-2b30-4ed5-95fe-e5941e447bff.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "a9b58e1c-5241-4f62-8a16-9aef2a77cc7b.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "5b0674d1-d517-4455-a3f8-60554ed8600e.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "a2ff1295-950e-4443-95ac-9e76b38c0d6d.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "2f3c2ddc-5bc1-42cb-a2d6-1021467339c7.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f2997bef-589f-48cb-aa95-e36ac1bd2c1a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "df58b932-d91a-4296-8391-ea7c5d2a45aa.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "47b249c0-d94e-45ee-a7db-f3d4c04567ae.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "548b30fa-b255-4f9e-bbe6-a6b0e57bedf8.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "712bc0df-01ef-4c76-b678-e0c6b6fdbb37.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "db3280ab-7852-462b-9ef9-27c7fe0c266a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "56a79ff8-3040-4648-961f-e4dedd811161.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "666b08e0-3d49-4c53-b122-f4f85d63c476.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "6fa15881-f1f2-4b7a-9fc9-28c61ddf0f23.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "0d9c0b3d-d7a0-456c-842b-7f14aec90a0f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "4f42e8b8-08c6-4c3e-8035-9a1ef84f0cd3.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "e1f5a577-0921-4719-b154-bc0cc9934367.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "412ef681-abf7-4e44-b4ee-3da5e1106e38.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "9e7459c4-5c6e-47ca-98b9-3d0ac250a329.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "350e5b3c-b45e-4a54-b390-ac6067d581e7.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "9f1c7b36-2afa-45cc-8690-17d5f65df54f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "393b4709-0111-400b-8bff-4a18b10a6f58.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "3d5c7126-d8c1-432a-8231-48021a8ce5d2.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "a7adefaf-e36f-4cec-acc6-c2e079f31e7d.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "5e217cbb-d224-4454-962a-f2ac65f23e26.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "6e7b5965-3772-485e-ac20-156e00ff2cf1.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "31b9b214-12a6-46cd-9d45-64ca836c6bb3.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c84c53fa-3705-4f8e-9599-c8722243f115.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c595a109-76fd-4985-942d-5aaa51a7bab7.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "5a4cec14-d2c3-454c-8a45-505d0db48dc1.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "d897b61f-0129-452a-afef-4148932500ec.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "81bc08fc-5d34-4469-9c39-cef65d1f3630.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "cb68b906-7978-4ece-bc83-9d44bf64455f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "013c92c0-b9f5-43f9-a2df-bfbf0ba94d9f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f30e8d28-160f-4498-a78f-98beeeebf456.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "083727cd-57be-4cb5-882f-48a6480ce6f2.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "e77f85e7-68e5-4dc6-9bbf-0728c0f98843.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "6e6c1e06-3281-473f-82cf-4f2d1e70edbd.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "dbb9a784-234e-4f0e-acd7-5aa60c7958f5.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "fd993159-d70d-4949-af4c-1e3ad8a03206.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "aee4a630-75c1-4adb-9b39-b83286c09966.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "1e501c9d-b10b-4587-9fb9-de2d21954bb8.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "3896c281-fec9-48f2-84f2-6f449228dd0c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "a04c2732-9a5d-4bcf-840c-fdb1013ceba5.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8a45fb05-993c-4bbd-b595-86c607d696b4.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "974bc4e8-a3ba-4812-b981-4cb3c8827943.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "233c6d11-e027-4393-97c2-ab618bf86f9f.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8704bae1-c4f7-4c6e-9519-3ab56d9b807e.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "e3d9a194-c62a-4794-9bd0-94603a967e17.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "0e42ef4f-46f8-4e16-9617-1a6dde477569.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "97609a3a-c1b8-4ffb-bc6d-e0f3dd729b5a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "b7728fa0-633d-460b-80ec-39a02ca5d897.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "d0a56668-d58b-4c5a-abde-bf2ae5d55db1.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "062b703a-bb2f-4afd-8585-72558bd99bca.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "b428b98f-f333-4afb-aa35-043cec9a3813.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "22a98d08-2078-446e-883b-f82ddba298e9.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "37828fce-57a7-43b1-840e-8f8187d2ef5c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "4fe44a11-01b2-461b-85d9-3488dd219e21.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f88d8b87-72f8-4d39-9c85-0326c42eaadd.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "2ecfc74e-ed5d-470f-859b-8d6099ce5c07.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "537c13aa-9540-4b49-b457-9c076df7e541.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "263f2504-eaca-4635-8a98-cee90424cbcb.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "d3ecdb40-2095-461a-b15d-77fa1d2d250e.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "03f23557-6e46-40d6-8138-c8ff5a1aa54e.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8ab63080-c140-4e5a-93ae-ec17e253aa15.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "092caf2e-5c8d-4dd4-a6e1-ca5af499ed6c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "426ba9d5-0429-4eb7-bb3a-3df34a3d7c15.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "53fbf482-6984-4c51-831b-6636e948e6b0.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "bc4354c9-26c8-4f5c-874d-1813c9529965.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "166c3b24-4448-4c4f-bf35-0f917b390ceb.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "16a1cd73-be47-4c99-8dd1-7c6eea854073.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "6252dfb1-62f3-4185-8416-4042e60ac815.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8dcc8610-868f-4bc9-a22b-27d16b768317.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "1fe017d7-c45b-4306-ae6e-179a870d4220.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "2e2ee2da-19d3-44ad-98a1-7f349d02bfa8.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c11e05cb-623f-4cde-b309-e7944881486c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "62b55519-c2f7-4cd2-902d-69326fafa637.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "712b0159-1581-4750-a144-db9947850023.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "16607917-4441-4e61-898d-eab566db69d2.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c61bde78-066e-4673-b4d2-32cdbf27ba0a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "e2f50570-0b32-412d-9f15-6663f90072c9.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "6b62d808-c71b-449f-beaf-d31796070867.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "97b09eac-160e-4656-96b8-bd6704ae4e1d.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "9afee9e3-d72f-4ccd-8fe8-8e0a9f2dc1fc.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "5b9990e5-edba-451a-b2cb-a1fad7eee887.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "18667778-f2af-41fb-89e0-d24522f1b0b8.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "1de1fd5e-b2b5-49b7-a62a-ff447e73906b.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c8b21b0f-1b50-4a62-ad33-15e0cd4fb866.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "7c067195-8f9d-4b07-b63c-9dd55d411e5b.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "80a3b848-2ed8-4009-a368-6089baa6d301.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "67191009-4537-4a28-bc1b-4a425fea0988.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "44d5e393-116d-4850-8363-cd0922692bed.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "5aaca3c6-a445-43e2-901d-245feaa2cdfc.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "3af59acf-edf4-4065-8569-bd2a308cce24.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "52e86589-7556-4caf-b478-062203cd59f2.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "eeef52cd-6549-4e82-9ee8-fe7eafeb735c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c9f5cab1-ab8a-44dd-8b8f-fa54e508cf6d.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "1304701c-adce-4de3-9eb6-016d27042ed0.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "31eccc79-748c-40f4-bc90-51bb51eca73e.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "4966048b-0f9b-4deb-b7c2-71efb98ead36.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "e0db0c64-2433-4b95-bca6-201cd1cb591c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "03f9b3a3-6c06-4036-96af-3190428ede0d.py",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "6ecce0fb-fe41-44ad-b919-581e765e0954siftSTFByMisfit",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 13.51,
+                "cores": 1,
+                "id": "00000101",
+                "category": "wrapper_siftSTFByMisfit",
+                "startedAt": "2024-06-09T21:11:04.877177+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000102",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "b428b98f-f333-4afb-aa35-043cec9a3813.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f41cae85-7996-4500-a33d-4a3c9cb51d23.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 180.324,
+                "cores": 1,
+                "id": "00000102",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.877321+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000103",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "22a98d08-2078-446e-883b-f82ddba298e9.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "b7c23576-84c7-4148-8e40-7ffd6cf21353.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 127.925,
+                "cores": 1,
+                "id": "00000103",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.877458+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000104",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "37828fce-57a7-43b1-840e-8f8187d2ef5c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "34140394-ed60-44bc-9a44-0e9b4e223ed9.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 456.821,
+                "cores": 1,
+                "id": "00000104",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.878769+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000105",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "4fe44a11-01b2-461b-85d9-3488dd219e21.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8b133c16-0d13-4e81-b6d5-12c7b9c0261e.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 531.974,
+                "cores": 1,
+                "id": "00000105",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.878948+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000106",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "f88d8b87-72f8-4d39-9c85-0326c42eaadd.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "0f6ed26c-67cb-4a88-8676-1c677b46861b.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000106",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.879099+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000107",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "2ecfc74e-ed5d-470f-859b-8d6099ce5c07.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "3f2189c2-3d84-48c4-8fab-7ab642894b11.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000107",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.879241+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000108",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "537c13aa-9540-4b49-b457-9c076df7e541.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "7e863224-12af-4f6a-ae4e-630229818fcb.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 274.46,
+                "cores": 1,
+                "id": "00000108",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.879389+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000109",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "263f2504-eaca-4635-8a98-cee90424cbcb.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "fae0f471-0289-47d9-934a-c4bfac917694.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000109",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.879541+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000110",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "d3ecdb40-2095-461a-b15d-77fa1d2d250e.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "20e6402d-9103-4007-b932-82bd8e53b920.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 490.056,
+                "cores": 1,
+                "id": "00000110",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.879732+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000111",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "03f23557-6e46-40d6-8138-c8ff5a1aa54e.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "5ed99a11-b219-4fa6-b252-42648c8319d7.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 290.695,
+                "cores": 1,
+                "id": "00000111",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.879883+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000112",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "8ab63080-c140-4e5a-93ae-ec17e253aa15.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8087aa9e-3ed6-4e02-bf72-74972fc272a5.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 357.648,
+                "cores": 1,
+                "id": "00000112",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.880023+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000113",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "092caf2e-5c8d-4dd4-a6e1-ca5af499ed6c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "36ce2f51-9259-4bbb-99fb-d6a02f7eea4a.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 278.314,
+                "cores": 1,
+                "id": "00000113",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.880161+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000114",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "426ba9d5-0429-4eb7-bb3a-3df34a3d7c15.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "bf8310df-1d99-4a4e-8071-66f1d7b4fec9.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 95.485,
+                "cores": 1,
+                "id": "00000114",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.880302+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000115",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "53fbf482-6984-4c51-831b-6636e948e6b0.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "f5eb3cae-5c0b-4bef-9c64-ae21fee5857b.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 479.753,
+                "cores": 1,
+                "id": "00000115",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.880440+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000116",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "bc4354c9-26c8-4f5c-874d-1813c9529965.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "a6b23059-a099-41b1-a629-725155d94feb.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000116",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.880588+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000117",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "166c3b24-4448-4c4f-bf35-0f917b390ceb.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "7c90fa75-1306-4ffc-b563-b3037bb01a12.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 218.679,
+                "cores": 1,
+                "id": "00000117",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.880755+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000118",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "16a1cd73-be47-4c99-8dd1-7c6eea854073.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "88651fb4-5195-4159-8d1b-511968cf177a.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000118",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.880895+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000119",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "6252dfb1-62f3-4185-8416-4042e60ac815.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "2b9f9fe5-27c9-48e0-8dda-c9f3a3a1b1c1.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000119",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.881030+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000120",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "8dcc8610-868f-4bc9-a22b-27d16b768317.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c85cc1b2-8ae3-4620-97e1-4d64c6499a01.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 260.475,
+                "cores": 1,
+                "id": "00000120",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.881167+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000121",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "1fe017d7-c45b-4306-ae6e-179a870d4220.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "33030502-13d0-4099-815d-e30201a206a1.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 147.554,
+                "cores": 1,
+                "id": "00000121",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.881303+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000122",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "2e2ee2da-19d3-44ad-98a1-7f349d02bfa8.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "fcb2724e-6f4c-45ce-bbd8-be16b8b028f7.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 202.638,
+                "cores": 1,
+                "id": "00000122",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.881439+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000123",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "c11e05cb-623f-4cde-b309-e7944881486c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "257663f7-b0be-44e3-81bf-34885dea8ad1.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 322.829,
+                "cores": 1,
+                "id": "00000123",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.881587+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000124",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "62b55519-c2f7-4cd2-902d-69326fafa637.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "10769810-e8db-4de3-aae2-64bb0d9927fc.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000124",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.881746+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000125",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "712b0159-1581-4750-a144-db9947850023.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c0f87a57-53f6-4a53-b6e0-e5d5636be769.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 515.504,
+                "cores": 1,
+                "id": "00000125",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.881886+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000126",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "16607917-4441-4e61-898d-eab566db69d2.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "0dc3ad99-e967-4acf-863a-b460c2de4b0f.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 93.673,
+                "cores": 1,
+                "id": "00000126",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.882022+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000127",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "c61bde78-066e-4673-b4d2-32cdbf27ba0a.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "34f85e66-ec24-4622-81be-c06148f28eea.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000127",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.882156+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000128",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "e2f50570-0b32-412d-9f15-6663f90072c9.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "c010a9dd-e1e1-4291-9a56-bbdab27c63c6.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 549.026,
+                "cores": 1,
+                "id": "00000128",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.882290+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000129",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "6b62d808-c71b-449f-beaf-d31796070867.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "e63a1f2a-65cc-446c-94a4-c1f7114ddf7f.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 107.388,
+                "cores": 1,
+                "id": "00000129",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.882425+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000130",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "97b09eac-160e-4656-96b8-bd6704ae4e1d.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "13cbb5c6-be08-4953-8224-992f9248e154.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 160.485,
+                "cores": 1,
+                "id": "00000130",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.882572+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000131",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "9afee9e3-d72f-4ccd-8fe8-8e0a9f2dc1fc.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "0d6d76a4-b39e-42b4-8549-20e1fec5dcbc.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 196.545,
+                "cores": 1,
+                "id": "00000131",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.882730+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000132",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "5b9990e5-edba-451a-b2cb-a1fad7eee887.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "0eac01ea-94d2-4f77-8cf6-02f6a2a5ba24.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000132",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.882868+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000133",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "18667778-f2af-41fb-89e0-d24522f1b0b8.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "61b5a3f8-197a-4caa-adb1-dce4c49b6ab7.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 101.354,
+                "cores": 1,
+                "id": "00000133",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.883005+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000134",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "1de1fd5e-b2b5-49b7-a62a-ff447e73906b.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "38411416-18fd-40c1-b67b-7aa24ff9bf82.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 345.052,
+                "cores": 1,
+                "id": "00000134",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.883139+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000135",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "c8b21b0f-1b50-4a62-ad33-15e0cd4fb866.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "5c4c3eca-3280-4581-85a6-ab80b2d65b55.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 404.4,
+                "cores": 1,
+                "id": "00000135",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.883291+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000136",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "7c067195-8f9d-4b07-b63c-9dd55d411e5b.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "4e795f0b-568b-4085-b8a8-d33e9fc0130d.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 399.271,
+                "cores": 1,
+                "id": "00000136",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.883437+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000137",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "80a3b848-2ed8-4009-a368-6089baa6d301.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "606dd7be-a075-405d-bf21-f517231d502e.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 332.137,
+                "cores": 1,
+                "id": "00000137",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.883583+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000138",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "67191009-4537-4a28-bc1b-4a425fea0988.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "5f2e4d67-e29e-4221-b61f-89768b6aaf93.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 59.392,
+                "cores": 1,
+                "id": "00000138",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.883741+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000139",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "44d5e393-116d-4850-8363-cd0922692bed.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "2c1b8be6-6e31-4edf-b531-0cc30b0697e2.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 365.616,
+                "cores": 1,
+                "id": "00000139",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.883882+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000140",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "5aaca3c6-a445-43e2-901d-245feaa2cdfc.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8f88df74-1269-4a61-8dd2-beca2e85157a.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000140",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.884017+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000141",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "3af59acf-edf4-4065-8569-bd2a308cce24.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "7b725045-8533-4eb8-af9f-2a99dde1aa84.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 304.344,
+                "cores": 1,
+                "id": "00000141",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.884151+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000142",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "52e86589-7556-4caf-b478-062203cd59f2.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "49390d7d-740a-4dbb-92c1-3e040580afec.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000142",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.884283+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000143",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "eeef52cd-6549-4e82-9ee8-fe7eafeb735c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "0beae2d3-bec2-440b-bcbd-824628d750a3.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 89.219,
+                "cores": 1,
+                "id": "00000143",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.884417+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000144",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "c9f5cab1-ab8a-44dd-8b8f-fa54e508cf6d.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "319b2822-e872-4450-9389-733718f62a69.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 56.15,
+                "cores": 1,
+                "id": "00000144",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.884561+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000145",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "1304701c-adce-4de3-9eb6-016d27042ed0.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "0dbe0dfc-0259-4d47-ada9-c02fef405348.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 132.119,
+                "cores": 1,
+                "id": "00000145",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.884721+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000146",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "31eccc79-748c-40f4-bc90-51bb51eca73e.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "8ae74b69-a2d9-4fdb-851e-f13ad354cd4b.lht",
+                        "sizeInBytes": 0
+                    }
+                ],
+                "runtimeInSeconds": 209.05,
+                "cores": 1,
+                "id": "00000146",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.884861+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000147",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "4966048b-0f9b-4deb-b7c2-71efb98ead36.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "4aad8a13-e3ec-492d-b045-3acfd39fd640.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 266.163,
+                "cores": 1,
+                "id": "00000147",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.884998+00:00"
+            },
+            {
+                "name": "sG1IterDecon_00000148",
+                "type": "compute",
+                "command": {
+                    "program": "sG1IterDecon",
+                    "arguments": []
+                },
+                "parents": [],
+                "children": [
+                    "wrapper_siftSTFByMisfit_00000101"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "e0db0c64-2433-4b95-bca6-201cd1cb591c.stf",
+                        "sizeInBytes": 0
+                    },
+                    {
+                        "link": "input",
+                        "name": "3f22bc40-f5f0-41ec-b3cd-be13185ab636.lht",
+                        "sizeInBytes": 1
+                    }
+                ],
+                "runtimeInSeconds": 314.733,
+                "cores": 1,
+                "id": "00000148",
+                "category": "sG1IterDecon",
+                "startedAt": "2024-06-09T21:11:04.885133+00:00"
+            }
+        ]
+    }
+}

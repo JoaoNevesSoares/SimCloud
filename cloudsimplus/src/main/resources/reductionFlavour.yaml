@@ -1,0 +1,7 @@
+vm:
+  mipsCapacity: 10000
+  pesNumber: 1
+  ram: 120
+  bw: 10
+  storage: 120
+  cloudletScheduler: "CloudletSchedulerTimeShared"

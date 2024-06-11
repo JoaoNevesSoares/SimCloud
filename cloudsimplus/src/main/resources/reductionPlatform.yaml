@@ -1,0 +1,18 @@
+- id: "1"
+  hosts:
+    - ram: 64000
+      bw: 100000
+      storage: 1000000
+      pes:
+        - id: 1
+          mipsCapacity: 3000
+        - id: 1
+          mipsCapacity: 3000
+      vmScheduler: vmSchedulerTimeShared
+  datacenterCharacteristics:
+    cpuCost: 0.15
+    ramCost: 0.005
+    storageCost: 0.001
+    distribution: private
+  vmAllocationPolicy: vmAllocationPolicyRoundRobin
+  schedulingInterval: 1

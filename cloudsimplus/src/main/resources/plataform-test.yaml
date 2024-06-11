@@ -1,0 +1,70 @@
+- id: "1"
+  hosts:
+    - ram: 64000
+      bw: 100000
+      storage: 1000000
+      pes:
+        - id: 1
+          mipsCapacity: 10000
+        - id: 2
+          mipsCapacity: 10000
+        - id: 3
+          mipsCapacity: 10000
+        - id: 4
+          mipsCapacity: 10000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 100000
+      storage: 1000000
+      pes:
+        - id: 1
+          mipsCapacity: 10000
+        - id: 2
+          mipsCapacity: 10000
+        - id: 3
+          mipsCapacity: 10000
+        - id: 4
+          mipsCapacity: 10000
+      vmScheduler: vmSchedulerTimeShared
+  datacenterCharacteristics:
+    cpuCost: 0.01
+    ramCost: 0.005
+    storageCost: 0.001
+    distribution: private
+  vmAllocationPolicy: vmAllocationPolicyRoundRobin
+  schedulingInterval: 1
+- id: "2"
+  hosts:
+    - ram: 64000
+      bw: 100000
+      storage: 1000000
+      pes:
+        - id: 1
+          mipsCapacity: 10000
+        - id: 2
+          mipsCapacity: 10000
+        - id: 3
+          mipsCapacity: 10000
+        - id: 4
+          mipsCapacity: 10000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 100000
+      storage: 1000000
+      pes:
+        - id: 1
+          mipsCapacity: 10000
+        - id: 2
+          mipsCapacity: 10000
+        - id: 3
+          mipsCapacity: 10000
+        - id: 4
+          mipsCapacity: 10000
+      vmScheduler: vmSchedulerTimeShared
+  datacenterCharacteristics:
+    cpuCost: 0.01
+    ramCost: 0.005
+    storageCost: 0.001
+    distribution: private
+  vmAllocationPolicy: vmAllocationPolicyRoundRobin
+  schedulingInterval: 1

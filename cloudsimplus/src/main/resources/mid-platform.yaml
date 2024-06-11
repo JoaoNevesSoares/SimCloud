@@ -1,0 +1,541 @@
+- id: "TACC"
+  hosts:
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+  datacenterCharacteristics:
+    cpuCost: 0,0372222222 # custo por hora 0.134 para todos os cores
+    ramCost: 0.00
+    storageCost: 0.00
+    distribution: private
+  vmAllocationPolicy: vmAllocationPolicyRoundRobin
+  schedulingInterval: 59
+- id: "UC"
+  hosts:
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+    - ram: 64000
+      bw: 10000
+      storage: 1000000
+      pes:
+        - id: 0
+          mipsCapacity: 1000
+        - id: 1
+          mipsCapacity: 1000
+        - id: 2
+          mipsCapacity: 1000
+        - id: 3
+          mipsCapacity: 1000
+        - id: 4
+          mipsCapacity: 1000
+        - id: 5
+          mipsCapacity: 1000
+        - id: 6
+          mipsCapacity: 1000
+        - id: 7
+          mipsCapacity: 1000
+        - id: 8
+          mipsCapacity: 1000
+        - id: 9
+          mipsCapacity: 1000
+        - id: 10
+          mipsCapacity: 1000
+        - id: 11
+          mipsCapacity: 1000
+      vmScheduler: vmSchedulerTimeShared
+  datacenterCharacteristics:
+    cpuCost: 0,0372222222 # custo por hora 0.134 para todos os cores
+    ramCost: 0.00
+    storageCost: 0.00
+    distribution: private
+  vmAllocationPolicy: vmAllocationPolicyRoundRobin
+  schedulingInterval: 59
+
