@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        simulatebyDays();
     }
     public static void simulatebyDays() {
         int days = 1;

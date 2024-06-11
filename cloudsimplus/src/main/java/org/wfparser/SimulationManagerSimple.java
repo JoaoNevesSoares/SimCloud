@@ -13,11 +13,18 @@ import org.wfparser.workflowparser.CloudletWorkflow;
 import java.util.List;
 
 public class SimulationManagerSimple {
-    private final CloudSimPlus sim = new CloudSimPlus();
+    protected final CloudSimPlus sim = new CloudSimPlus();
     private List<DatacenterSimple> datacenters;
-    private SimulationLogger simLog;
+    protected SimulationLogger simLog;
+
+    protected SimulationScheduler getSimulationScheduler() {
+        return simulationScheduler;
+    }
+    protected List<DatacenterSimple> getDatacenters() {
+        return datacenters;
+    }
     private SimulationScheduler simulationScheduler;
-    private BrokerManagerSimple brokerManager;
+    protected BrokerManagerSimple brokerManager;
     private static final int VMS_AMOUNT = 4;
     private final String directoryPrefix;
 
@@ -36,20 +43,20 @@ public class SimulationManagerSimple {
         sim.start();
         displayStatistics();
     }
-    private void setupDatacenters() {
+    protected void setupDatacenters() {
         PlatformUtils.init(sim);
         datacenters = PlatformUtils.loadPlatform("src/main/resources/low-platform.yaml");
         for (DatacenterSimple datacenter : datacenters) {
             datacenter.setVmAllocationPolicy(new VmAllocationPolicyWorstFit());
         }
     }
-    private void setupLogger() {
+    protected void setupLogger() {
         simLog = new SimulationLogger(directoryPrefix);
     }
-    private void setupSimulationScheduler() {
+    protected void setupSimulationScheduler() {
         simulationScheduler = new SimulationScheduler(11,86400,60);
     }
-    private void displayStatistics() {
+    protected void displayStatistics() {
         displayWorkflowStatistics();
         Host host1 = datacenters.getFirst().getHost(0);
         new HostHistoryTableBuilder(host1).build();
@@ -58,7 +65,7 @@ public class SimulationManagerSimple {
         simLog.writeBrokerTableToFile();
         simLog.writeHostsTableToFile();
     }
-    private void displayWorkflowStatistics() {
+    protected void displayWorkflowStatistics() {
         for (int i = 0; i < brokerManager.brokers.size(); i++) {
             var broker = brokerManager.brokers.get(i);
             List<CloudletWorkflow> finishedActivities = broker.getCloudletFinishedList();
@@ -66,7 +73,7 @@ public class SimulationManagerSimple {
             simLog.recordBrokerStatus("montage", broker, i);
         }
     }
-    private void onClockTickFunction(EventInfo info) {
+    protected void onClockTickFunction(EventInfo info) {
         double time = info.getTime();
         if (simulationScheduler.isWaitingNextEvents(time) && time <= 84500 ) {
             brokerManager.newBrokerRequest(sim, datacenters, VMS_AMOUNT);
@@ -80,7 +87,7 @@ public class SimulationManagerSimple {
             simulationScheduler.updateLastRecordTime(time);
         }
     }
-    private void logHostStatistics(double time) {
+    protected void logHostStatistics(double time) {
         for (DatacenterSimple datacenter : datacenters) {
             for (Host host : datacenter.getHostList()) {
                 simLog.recordHostUsage(time,host);
